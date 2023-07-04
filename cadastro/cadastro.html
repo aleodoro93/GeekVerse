@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="./cadastros.js" defer></script>
+
+    </head>
+
+
+
+<body>
+    <main>
+        <section class="h-100 h-custom gradient-custom-2">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12">
+                        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <div class="p-5">
+                                            <h3 class="fw-normal mb-5" style="color: #4835d4;">Cadastro</h3>
+
+                                            <div class="mb-4 pb-2">
+                                                <select class="select">
+                                                    <option value="1" selected disabled>Plano</option>
+                                                    <option value="2">Plano 1</option>
+                                                    <option value="3">Plano 2</option>
+                                                    <option value="4">Plano 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2">
+
+                                                    <div class="form-outline">
+                                                        <input type="text" id="name"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="name">Nome</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 mb-4 pb-2">
+
+                                                    <div class="form-outline">
+                                                        <input type="text" id="lastName"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="lastName">Sobrenome</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4 pb-2">
+
+
+                                                </select>
+                                            </div>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline">
+                                                    <input type="text" id="email"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="email">Email</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+
+                                                    <div class="form-outline">
+                                                        <input type="text" id="password"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="password">Senha</label>
+                                                    </div>
+                                                    <div class="form-outline">
+                                                        <input type="text" id="passwordConfirm"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="passwordConfirm">Confirme sua Senha</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 bg-indigo text-white">
+                                        <div class="p-5">
+                                            <h3 class="fw-normal mb-5">Endereço</h3>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    <input type="text" id="streetName"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="streetName">Nome da rua</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-outline">
+                                                <input type="text" id="numberResidence"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="numberResidence">Numero da residencia</label>
+                                            </div>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    <input type="text" id="complement"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="complement">complemento</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-5 mb-4 pb-2">
+
+                                                    <div class="form-outline form-white">
+                                                        <input type="text" id="Cep"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="Cep">Cep</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-7 mb-4 pb-2">
+
+                                                    <div class="form-outline form-white">
+                                                        <input type="text" id="cidade"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="cidade">Cidade</label>
+                                                    </div>
+                                                    <div class="form-outline form-white">
+                                                        <input type="text" id="state"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="state">Estado</label>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4 pb-2">
+                                                <div class="form-outline form-white">
+                                                    <input type="text" id="Country"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="Country">Pais</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                
+
+                                        
+                                                <div class="col-md-7 mb-4 pb-2">
+
+                                                    <div class="form-outline form-white">
+                                                        <input type="text" id="phone"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="phone">Numero de telefone</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                                                <input class="form-check-input me-3" type="checkbox" value=""
+                                                    id="form2Example3c" />
+                                                <label class="form-check-label text-white" for="form2Example3">
+                                                    I do accept the <a href="#!" class="text-white"><u>Terms and
+                                                            Conditions</u></a> of your
+                                                    site.
+                                                </label>
+                                            </div>
+
+                                            <button type="button" class="btn btn-light btn-lg"
+                                                data-mdb-ripple-color="dark">Register</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
