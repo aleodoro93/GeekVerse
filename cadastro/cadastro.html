@@ -2,195 +2,174 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="./cadastros.js" defer></script>
-
-    </head>
-
-
+    <link rel="stylesheet" href="cadastro.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cadastro.js" defer></script>
+</head>
 
 <body>
     <main>
-        <section class="h-100 h-custom gradient-custom-2">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-12">
-                        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-                            <div class="card-body p-0">
-                                <div class="row g-0">
-                                    <div class="col-lg-6">
-                                        <div class="p-5">
-                                            <h3 class="fw-normal mb-5" style="color: #4835d4;">Cadastro</h3>
+        <!--
+  This example requires some changes to your config:
+  am
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+        <!--
+  This example requires updating your template:
 
-                                            <div class="mb-4 pb-2">
-                                                <select class="select">
-                                                    <option value="1" selected disabled>Plano</option>
-                                                    <option value="2">Plano 1</option>
-                                                    <option value="3">Plano 2</option>
-                                                    <option value="4">Plano 3</option>
-                                                </select>
-                                            </div>
+  ```
+  <html class="h-full bg-white">
+  <body class="h-full">
+  ```
+-->
+        <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="Your Company" />
+                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                    Sign in to your account
+                </h2>
+            </div>
 
-                                            <div class="row">
-                                                <div class="col-md-6 mb-4 pb-2">
-
-                                                    <div class="form-outline">
-                                                        <input type="text" id="name"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="name">Nome</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-6 mb-4 pb-2">
-
-                                                    <div class="form-outline">
-                                                        <input type="text" id="lastName"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="lastName">Sobrenome</label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-4 pb-2">
-
-
-                                                </select>
-                                            </div>
-
-                                            <div class="mb-4 pb-2">
-                                                <div class="form-outline">
-                                                    <input type="text" id="email"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="email">Email</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
-
-                                                    <div class="form-outline">
-                                                        <input type="text" id="password"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="password">Senha</label>
-                                                    </div>
-                                                    <div class="form-outline">
-                                                        <input type="text" id="passwordConfirm"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="passwordConfirm">Confirme sua Senha</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-6">
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 bg-indigo text-white">
-                                        <div class="p-5">
-                                            <h3 class="fw-normal mb-5">Endereço</h3>
-
-                                            <div class="mb-4 pb-2">
-                                                <div class="form-outline form-white">
-                                                    <input type="text" id="streetName"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="streetName">Nome da rua</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-outline">
-                                                <input type="text" id="numberResidence"
-                                                    class="form-control form-control-lg" />
-                                                <label class="form-label" for="numberResidence">Numero da residencia</label>
-                                            </div>
-
-                                            <div class="mb-4 pb-2">
-                                                <div class="form-outline form-white">
-                                                    <input type="text" id="complement"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="complement">complemento</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-5 mb-4 pb-2">
-
-                                                    <div class="form-outline form-white">
-                                                        <input type="text" id="Cep"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="Cep">Cep</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-7 mb-4 pb-2">
-
-                                                    <div class="form-outline form-white">
-                                                        <input type="text" id="cidade"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="cidade">Cidade</label>
-                                                    </div>
-                                                    <div class="form-outline form-white">
-                                                        <input type="text" id="state"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="state">Estado</label>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-
-                                            <div class="mb-4 pb-2">
-                                                <div class="form-outline form-white">
-                                                    <input type="text" id="Country"
-                                                        class="form-control form-control-lg" />
-                                                    <label class="form-label" for="Country">Pais</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                
-
-                                        
-                                                <div class="col-md-7 mb-4 pb-2">
-
-                                                    <div class="form-outline form-white">
-                                                        <input type="text" id="phone"
-                                                            class="form-control form-control-lg" />
-                                                        <label class="form-label" for="phone">Numero de telefone</label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="form-check d-flex justify-content-start mb-4 pb-3">
-                                                <input class="form-check-input me-3" type="checkbox" value=""
-                                                    id="form2Example3c" />
-                                                <label class="form-check-label text-white" for="form2Example3">
-                                                    I do accept the <a href="#!" class="text-white"><u>Terms and
-                                                            Conditions</u></a> of your
-                                                    site.
-                                                </label>
-                                            </div>
-
-                                            <button type="button" class="btn btn-light btn-lg"
-                                                data-mdb-ripple-color="dark">Register</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" >
+                    
+                    <div>
+                        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Nome
+                        </label>
+                        <div class="mt-2">
+                            <input id="name" name="name" type="text" autocomplete="name" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Digite seu email</label>
+                        <div class="mt-2">
+                            <input id="email" name="email" type="text" autocomplete="email" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
 
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label for="password"
+                                class="block text-sm font-medium leading-6 text-gray-900">Crie uma senha</label>
+                            <div class="text-sm">
+                            </div>
+                        </div>
+                        
+                        <div class="mt-2">
+                            <input id="senha" name="senha" type="password" autocomplete="senha"
+                                required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                        <div>
+                            <label for="confsenha" class="block text-sm font-medium leading-6 text-gray-900">Confirme sua senha</label>
+                            <div class="mt-2">
+                                <input id="confsenha" name="confsenha" type="password" autocomplete="confsenha" required
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                
+                                </div>
+
+
+                    </div>
+                   
+
+                    <div>
+                        <label for="RG" class="block text-sm font-medium leading-6 text-gray-900">RG</label>
+                        <div class="mt-2">
+                            <input id="RG" name="RG" type="text" maxlength="8" autocomplete="RG" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="CEP" class="block text-sm font-medium leading-6 text-gray-900">CEP</label>
+                        <div class="mt-2">
+                            <input id="CEP" name="CEP" type="text" maxlength="8" autocomplete="CEP" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="rua" class="block text-sm font-medium leading-6 text-gray-900">Rua</label>
+                        <div class="mt-2">
+                            <input id="rua" name="rua" type="text"  autocomplete="rua" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="numero" class="block text-sm font-medium leading-6 text-gray-900">Numero</label>
+                        <div class="mt-2">
+                            <input id="numero" name="numero" type="number"  autocomplete="numero" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+
+
+
+
+                    
+                    <div>
+                        <label for="Cidade" class="block text-sm font-medium leading-6 text-gray-900">Estado</label>
+                        <div class="mt-2">
+                            <input id="estado" name="estado" type="text" autocomplete="estado" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="cidade" class="block text-sm font-medium leading-6 text-gray-900">Cidade</label>
+                        <div class="mt-2">
+                            <input id="cidade" name="cidade" type="text" autocomplete="cidade" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="bairro" class="block text-sm font-medium leading-6 text-gray-900">Bairro</label>
+                        <div class="mt-2">
+                            <input id="bairro" name="bairro" type="text" autocomplete="bairro" required
+                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+
+                        <div>
+                            <label for="complemento" class="block text-sm font-medium leading-6 text-gray-900">Complemento</label>
+                            <div class="mt-2">
+                                <input id="complemento" name="complemento" type="text" autocomplete="complemento" required
+                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                            </div>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Cadastro
+                        </button>
+                    </div>
+                </form>
+
+                <p class="mt-10 text-center text-sm text-gray-500">
+                    Not a member?
+                    <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Start a 14 day
+                        free trial</a>
+                </p>
+            </div>
+        </div>
     </main>
 </body>
 
