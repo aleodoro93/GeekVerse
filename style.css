@@ -15,6 +15,7 @@ body {
   width: 100%;
   /* height: 100vh; */
   background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
+  /* background: #020202; */
 }
 
 /* TODO: CORRIGIR HEIGHT APÓS ADICIONAR IMAGENS */
@@ -118,13 +119,13 @@ header {
   max-width: 50rem;
 }
 
-li {
+.infos-boxes>ul>li {
   list-style: none;
   font-size: 15px;
   line-height: 1.9;
 }
 
-li::before {
+.infos-boxes>ul>li::before {
   content: "";
   display: inline-block;
   background-image: url(./images/star-fill.svg);
@@ -190,3 +191,23 @@ li::before {
   box-shadow: 0 0 17px 3px #b908f6, 0 0 4px 2px #b908f6;
   border-radius: 8px;
 }
+
+/* Aqui começa a estilização do footer */
+/* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
+
+footer {
+  background: #020202;
+  min-height: 300px;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media img {
+  width: 30px;
+  height: auto;
+}
+
+/* Aqui termina a estilização do footer */
