@@ -1,9 +1,12 @@
-/* Reset CSS */
 * {
+  /* Reset CSS */
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+
+  /* Adiciona fonte*/
+  font-family: "Inter", sans-serif;
 }
 
 /* Linear Background para todas as páginas */
@@ -15,13 +18,14 @@ body {
 }
 
 /* TODO: CORRIGIR HEIGHT APÓS ADICIONAR IMAGENS */
-.bg-home {
-  background-color: #020202;
+header {
+  background-color: rgb(2, 2, 2, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
-  height: 120px;
+  height: 67px;
 }
 
 .btn-home {
@@ -49,4 +53,50 @@ body {
   background-color: #7564e5;
   color: #ffffff;
   border: 2px solid transparent;
+}
+
+.carousel-home {
+  margin-top: 67px;
+  height: calc(100vh - 67px);
+}
+
+.carousel-item {
+  height: calc(100vh - 67px);
+  background-size: cover;
+}
+
+.carousel-item.item-1 {
+  background-image: url("./images/carrossel-imagem-provisoria-1.png");
+}
+
+.carousel-item.item-2 {
+  background-image: url("./images/carrossel-imagem-provisoria-2.png");
+}
+
+.carousel-item.item-3 {
+  background-image: url("./images/carrossel-imagem-provisoria-3.png");
+}
+
+.overlay {
+  width: 100%;
+  height: calc(100vh - 67px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(2, 2, 2, 0.65);
+}
+
+.carousel-caption>h5 {
+  font-size: 50px;
+  color: #F601FF;
+  font-weight: 700;
+
+}
+
+.carousel-caption>p {
+  font-size: 25px;
+  color: #FFFFFF;
+
 }
