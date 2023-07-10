@@ -13,8 +13,8 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, #020202 51%, #7564e5 100%);
+  /* height: 100vh; */
+  background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
 }
 
 /* TODO: CORRIGIR HEIGHT APÓS ADICIONAR IMAGENS */
@@ -50,7 +50,7 @@ header {
 }
 
 .btn-lista-espera {
-  background-color: #7564e5;
+  background-color: #7563e6;
   color: #ffffff;
   border: 2px solid transparent;
 }
@@ -88,7 +88,54 @@ header {
   background-color: rgb(2, 2, 2, 0.65);
 }
 
-.carousel-caption>h5 {
+.section-infos>p {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.section-infos {
+  background-image: url("./images/background-texto-explicacao-provisorio.jpg");
+}
+
+.overlay-infos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(5, 2, 24, 0.85);
+}
+
+.infos-boxes>p {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.9;
+}
+
+.infos-boxes>ul {
+  max-width: 50rem;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./images/star-fill.svg);
+  height: 12px;
+  width: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.carousel-caption>h2 {
   font-size: 50px;
   color: #F601FF;
   font-weight: 700;
@@ -96,7 +143,7 @@ header {
 }
 
 .carousel-caption>p {
-  font-size: 25px;
+  font-size: 20px;
   color: #FFFFFF;
 
 }
