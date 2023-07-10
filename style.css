@@ -147,3 +147,46 @@ li::before {
   color: #FFFFFF;
 
 }
+
+.section-plans {
+  background-color: rgb(5, 2, 24, 0.85)
+}
+
+.box-plan {
+  width: 19.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(117, 100, 229, 0.5) 45%, transparent 100%);
+  border-radius: 8px;
+  padding: 25px;
+  min-height: 15rem;
+  position: relative;
+}
+
+.box-plan>span {
+  border-radius: 24px;
+  /* TODO: TROCAR COR DO GRADIENTE */
+  background: linear-gradient(46deg, #5b16bd, #b908f6);
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  font-size: 12px;
+  position: absolute;
+  height: 24px;
+  top: -12px;
+}
+
+.box-plan.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 17px 3px #b908f6, 0 0 4px 2px #b908f6;
+  box-shadow: 0 0 17px 3px #b908f6, 0 0 4px 2px #b908f6;
+  border-radius: 8px;
+}
