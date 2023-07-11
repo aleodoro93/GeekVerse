@@ -17,14 +17,37 @@
 </head>
 
 <body>
-    <header>
-
-        <!-- CÓDIGO DA HEADER VEM AQUI -->
-
+    <header class="py-2">
+        <div class="px-2">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+                    <img src="./imagens/logo-provisoria.png" alt="logo">
+                </a>
+                <section class="d-flex justify-content-center py-3">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lista de Espera</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    </ul>
+                </section>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small"
+                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 34.4px, 0px);"
+                        data-popper-placement="bottom-start">
+                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-
         <section>
             <div class="title-contact">
                 <h1>Contatos</h1>
