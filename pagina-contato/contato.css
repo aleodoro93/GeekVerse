@@ -21,9 +21,8 @@ header {
 
 body {
     width: 100%;
-    background: linear-gradient(to right, rgb(5, 244, 240) 0%, rgb(6, 245, 233) 25%, rgb(3, 141, 239) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
-    background-size: 300% 100%;
-    animation: degrade 20s infinite alternate;
+    background: url(./imagens/4844225.jpg);
+    animation: degrade 50s infinite alternate;
 
 }
 
@@ -90,11 +89,10 @@ section {
     height: 100%;
     border-radius: 20px;
 
-
 }
 
 .icons {
-    width: 50px;
+    width: 40px;
     background-color: #3FA1C1;
     border-radius: 20px;
     justify-content: space-between;
@@ -114,26 +112,27 @@ section {
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #EC6F45;
+
     font-size: 80px;
     margin: 50px;
 
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: white;
     font-size: 50px;
 }
 
-
 h3 {
-    
+
     font-size: 30px;
     margin: 35px;
 }
-
 
 h4 {
     color: black;
@@ -144,8 +143,8 @@ h4 {
 h5 {
     color: #D4E564;
     font-size: 10px;
-    
-} 
+
+}
 
 p {
     color: white;
@@ -154,6 +153,7 @@ p {
     margin: 20px;
 
 }
+
 footer {
     background: #020202;
     min-height: 300px;
