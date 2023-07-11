@@ -1,159 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="cadastro.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="cadastro.js" defer></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="./imagens/logo-barra-navegador.png"
+        alt="Caixinha branca com detalhes coloridos">
+        <script src="./cadastro.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>GeekVerse</title>
+  </head>
 
-<body>
-    <main>
-        
-        <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt="Your Company" />
-                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                    Cria sua conta na GeekVerse
-                </h2>
-            </div>
+ 
+    <header>
+      <!-- Aqui começa o header da página -->
+  <header class="py-2">
+    <div class="px-2">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+          <img src="./imagens/logo-provisoria.png" alt="logo">
+        </a>
 
-            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form class="space-y-6" >
-                    
-                    <div>
-                        <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Nome
-                        </label>
-                        <div class="mt-2">
-                            <input id="name" name="name" type="text" autocomplete="name" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Digite seu email</label>
-                        <div class="mt-2">
-                            <input id="email" name="email" type="text" autocomplete="email" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="flex items-center justify-between">
-                            <label for="senha"
-                                class="block text-sm font-medium leading-6 text-gray-900">Crie uma senha</label>
-                            
-                            
-                            </div>
-                        </div>
-                        
-                        <div class="mt-2">
-                            <input id="senha" name="senha" type="password" autocomplete="senha"
-                                required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                                <div id="senhaValor"></div>
-                        </div>
-                        <div>
-                            <label for="confsenha" class="block text-sm font-medium leading-6 text-gray-900">Confirme sua senha</label>
-                            <div class="mt-2">
-                                <input id="confsenha" name="confsenha" type="password" autocomplete="confsenha" required
-                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                                    <div id="confirmacaoSenha"></div>
-                                </div>
-
-
-                    </div>
-                   
-
-                    <div>
-                        <label for="RG" class="block text-sm font-medium leading-6 text-gray-900">RG</label>
-                        <div class="mt-2">
-                            <input id="RG" name="RG" type="text" maxlength="8" autocomplete="RG" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="CEP" class="block text-sm font-medium leading-6 text-gray-900">CEP</label>
-                        <div class="mt-2">
-                            <input id="CEP" name="CEP" type="text" maxlength="8" autocomplete="CEP" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="rua" class="block text-sm font-medium leading-6 text-gray-900">Rua</label>
-                        <div class="mt-2">
-                            <input id="rua" name="rua" type="text"  autocomplete="rua" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="numero" class="block text-sm font-medium leading-6 text-gray-900">Numero</label>
-                        <div class="mt-2">
-                            <input id="numero" name="numero" type="number"  autocomplete="numero" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-
-
-
-
-                    
-                    <div>
-                        <label for="Cidade" class="block text-sm font-medium leading-6 text-gray-900">Estado</label>
-                        <div class="mt-2">
-                            <input id="estado" name="estado" type="text" autocomplete="estado" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="cidade" class="block text-sm font-medium leading-6 text-gray-900">Cidade</label>
-                        <div class="mt-2">
-                            <input id="cidade" name="cidade" type="text" autocomplete="cidade" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="bairro" class="block text-sm font-medium leading-6 text-gray-900">Bairro</label>
-                        <div class="mt-2">
-                            <input id="bairro" name="bairro" type="text" autocomplete="bairro" required
-                                class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                        </div>
-
-                        <div>
-                            <label for="complemento" class="block text-sm font-medium leading-6 text-gray-900">Complemento</label>
-                            <div class="mt-2">
-                                <input id="complemento" name="complemento" type="text" autocomplete="complemento" required
-                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                            </div>
-                    </div>
-                    <div>
-                        <button type="submit"
-                            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                            Cadastro
-                        </button>
-                    </div>
-                </form>
-
-                <p class="mt-10 text-center text-sm text-gray-500">
-                    
-                      <input type="checkbox" class="form-check-input" id="check1"/>
-                      <label class="form-check-label" for="check1">Ao marcar a caixa você</label>
-                    
-                    <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Concorda com nossos termos de usuario</a>
-                </p>
-            </div>
+        <div class="text-end">
+          <button type="button" class="btn-home btn-login me-2">Login</button>
+          <button type="button" class="btn-home btn-lista-espera">Inicio</button>
         </div>
-    </main>
-</body>
+      </div>
+    </div>
+  </header>
+  <!-- Aqui termina o header da página -->
+    </header>
 
+    <main>
+    <section class="container">
+      <h1 class="">Cadastre-se</h1>
+      
+     <form  class=" justify-content-center py-3 rounded form-style " action="">
+
+      <fieldset class="d-flex flex-wrap justify-content-center">
+      <div class="columns-form d-flex flex-wrap">
+        
+      <label for="name">Nome</label>
+      <input type="text" placeholder="Nome"  name="name" id="name" required >
+      
+      
+      <label for="rg">RG</label>
+      <input  type="number" placeholder="RG"  name="rg" id="rg" required>
+      
+    <label for="email">Email</label>
+      <input type="email" placeholder="Email"  name="email" id="email" required=>
+      
+      <label for="password" >Senha</label>
+      <input type="password" placeholder="Senha" name="password" id="password" required>
+      <div id="Passwordvalidade"></div>
+      <label for="confpassword">Confirme sua senha</label>
+      <input type="password" placeholder="Confirme sua Senha"  name="confpassword" id="confpassword" required>
+      <div id="confirmPassword"></div>
+    </div>
+    <div  class="columns-form" class="color-style-column2">
+      
+      <label for="zipcode">CEP</label>
+      <input type="text" placeholder="CEP" maxlength="8" name="cep" id="zipcode" required>
+      
+      <label for="estate">Estado</label>
+      <input type="text" placeholder="Estado"  name="estate" id="estate" required>
+      
+      <label for="city">Cidade</label>
+      <input type="text" placeholder="Cidade"  name="city" id="city" required>
+      
+      <label for="district">Bairro</label>
+      <input type="text" placeholder="Bairro"  name="district" id="district" required>
+      
+      <label for="street">Rua</label>
+      <input type="text" placeholder="Rua"  name="city" id="street" required>
+      
+      <label for="number">Numero</label>
+      <input type="number" placeholder="Numero"  name="number" id="number" required>
+      
+
+      
+      <label for="complement">Complemento</label>
+      <input type="text" placeholder="Complemento"  name="complement" id="complement" required="Preencha este campo">
+      </div>
+  </form>
+</fieldset>
+<button type="submit" id="btnRegister" class="button-register">Cadastrar</button>
+    </section>
+    </main>
+
+    <footer
+      class="py-5 d-flex flex-column justify-content-between align-items-center"
+    >
+      <img src="./imagens/logo-provisoria.png" alt="logo" />
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Lista de Espera</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Contato</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="./imagens/instagram-logo.svg" alt="Logo do Instagram" />
+        </a>
+        <a href="https://www.tiktok.com/pt-BR/" target="_blank">
+          <img src="./imagens/tiktok-logo.svg" alt="Logo do TikTok" />
+        </a>
+        <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
+          <img src="./imagens/whatsapp-logo.svg" alt="Logo do WhatsApp" />
+        </a>
+      </div>
+      <p class="text-center text-white mb-0">© 2023 Squad 8, Resilia</p>
+    </footer>
+  </body>
 </html>

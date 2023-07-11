@@ -1,32 +1,27 @@
-const senhaInput = document.getElementById("senha");
-const alertaSenha = document.getElementById("senhaValor");
-const alertaConfSenha = document.getElementById("confirmacaoSenha");
-senhaInput.addEventListener("change", function () {
-
-  if (senhaInput.value.length < 8) {
-    alertaSenha.innerHTML = `A senha deve conter mais que 8 digitos`
-    alertaSenha.style.color = "red"
-    alertaSenha.style.border = "solid 1px "
-    alertaSenha.style.borderRadius = "10px"
-    alertaSenha.style.textAlign = "center"
-    alertaSenha.style.padding = "5px"
-    alertaSenha.style.opacity = "50%"
+const passwordInput = document.getElementById("password");
+const alertPassword = document.getElementById("Passwordvalidade");
+const alertConfPassword = document.getElementById("confirmPassword");
+const btnRegister = document.getElementById("btnRegister");
+var costummers = []; 
+passwordInput.addEventListener("change", function () {
+  if (passwordInput.value.length < 8) {
+    alertPassword.innerHTML = `A senha deve conter mais que 8 digitos`;
+    alertPassword.style.color = "red";
+    alertPassword.style.textAlign = "center";
+    alertPassword.style.padding = "5px"
   } else {
-    alertaSenha.innerHTML = ``
+    alertPassword.innerHTML = "";
   }
-})
-const confirmaSenha = document.getElementById("confsenha");
-confirmaSenha.addEventListener("change", validacaoSenha);
-function validacaoSenha(){
-
-  if (senhaInput.value != confirmaSenha.value){
-
-    alertaConfSenha.innerHTML = "As senhas nao combinam, tente novamente!"
-    alertaConfSenha.style.color = "red"
-    
-
+});
+const confirmapassword = document.getElementById("confpassword");
+confirmapassword.addEventListener("change", validacaopassword);
+function validacaopassword() {
+  if (passwordInput.value != confirmapassword.value) {
+    alertConfPassword.innerHTML = "As senhas nao combinam, tente novamente!";
+    alertConfPassword.style.color = "red";
+    alertConfPassword.style.textAlign = "center"
   } else {
-    alertaConfSenha.innerHTML = ""
+    alertConfPassword.innerHTML = "";
   }
 }
 /* aqui puxa a api */
@@ -39,17 +34,16 @@ async function fillendress(cep) {
       throw new Error("CEP não encontrado");
     }
 
-    document.getElementById("estado").value = data.uf;
-    document.getElementById("cidade").value = data.localidade;
-    document.getElementById("bairro").value = data.bairro;
-    document.getElementById("rua").value = data.logradouro;
-    
+    document.getElementById("estate").value = data.uf;
+    document.getElementById("city").value = data.localidade;
+    document.getElementById("district").value = data.bairro;
+    document.getElementById("street").value = data.logradouro;
   } catch (error) {
     alert(error.message);
   }
 }
 /* EventListnner arrow function para validar e preencher o os dados e endereços referente ao CEP */
-const cepInput = document.getElementById("CEP");
+const cepInput = document.getElementById("zipcode");
 cepInput.addEventListener("input", (event) => {
   const cep = event.target.value.replace(/\D/g, "");
 
@@ -58,3 +52,45 @@ cepInput.addEventListener("input", (event) => {
   }
 });
 
+
+class Cliente {
+  constructor(name, email, password, rg, cep, city, estate, street, number, complement) {
+    this.name = name;
+    this.email = email;
+    this.password = password;
+    this.rg = rg;
+    this.cep = cep;
+    this.city = city;
+    this.estate = estate;
+    this.number = number;
+    this.complement = complement;
+  }
+}
+
+btnRegister.addEventListener("click", () => {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const rg = document.getElementById("rg").value;
+  const cep = document.getElementById("zipcode").value;
+  const street = document.getElementById("street").value;
+  const city = document.getElementById("city").value;
+  const estate = document.getElementById("estate").value;
+  const number = document.getElementById("number").value;
+  const complement = document.getElementById("complement").value;
+
+  
+  if (name || email || password || rg || cep || street || city || estate || number === "") {
+    alert("Preencha todos os campos, por favor!")}
+
+    if(name.length === "2"){
+      alert("Insira um nome valido!");
+
+    }
+    
+
+    else {var costumerscreate = new Cliente(name,email,password,rg,cep,city,estate,number,complement);
+      costummers.push(costumerscreate);}});
+
+
+ 
