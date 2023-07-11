@@ -6,7 +6,8 @@
   box-sizing: border-box;
 
   /* Adiciona fonte*/
-  font-family: "Inter", sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 }
 
 /* Linear Background para todas as páginas */
@@ -15,18 +16,16 @@ body {
   width: 100%;
   /* height: 100vh; */
   background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
-  /* background: #020202; */
 }
 
-/* TODO: CORRIGIR HEIGHT APÓS ADICIONAR IMAGENS */
 header {
-  background-color: rgb(2, 2, 2, 0.5);
+  background-color: rgb(0, 2, 0, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 67px;
+  height: 4.25rem;
 }
 
 .btn-home {
@@ -36,33 +35,34 @@ header {
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 0.9px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .btn-home:hover {
-  background-color: #ffffff;
-  color: #020202;
+  background-color: #BAA0F2;
+  color: #000200;
 }
 
 .btn-login {
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 2px solid #BAA0F2;
 }
 
 .btn-lista-espera {
-  background-color: #7563e6;
-  color: #ffffff;
+  background-color: #51D93D;
+  color: #000200;
   border: 2px solid transparent;
 }
 
 .carousel-home {
-  margin-top: 67px;
-  height: calc(100vh - 67px);
+  margin-top: 4.25rem;
+  height: calc(100vh - 4.25rem);
+  margin-top: 4.25rem;
 }
 
 .carousel-item {
-  height: calc(100vh - 67px);
+  height: calc(100vh - 4.25rem);
   background-size: cover;
 }
 
@@ -78,9 +78,22 @@ header {
   background-image: url("./images/carrossel-imagem-provisoria-3.png");
 }
 
+.carousel-caption>h2 {
+  font-size: 50px;
+  color: #F601FF;
+  font-weight: 700;
+
+}
+
+.carousel-caption>p {
+  font-size: 20px;
+  color: #FFFFFF;
+
+}
+
 .overlay {
   width: 100%;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 4.25rem);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -89,13 +102,14 @@ header {
   background-color: rgb(2, 2, 2, 0.65);
 }
 
+.section-infos {
+  background-image: url("./images/background-texto-explicacao-provisorio.jpg");
+  height: 100vh;
+}
+
 .section-infos>p {
   max-width: 60rem;
   margin: 0 auto;
-}
-
-.section-infos {
-  background-image: url("./images/background-texto-explicacao-provisorio.jpg");
 }
 
 .overlay-infos {
@@ -132,26 +146,15 @@ header {
   height: 12px;
   width: 12px;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   margin-right: 8px;
 }
 
-.carousel-caption>h2 {
-  font-size: 50px;
-  color: #F601FF;
-  font-weight: 700;
-
-}
-
-.carousel-caption>p {
-  font-size: 20px;
-  color: #FFFFFF;
-
-}
-
-.section-plans {
-  background-color: rgb(5, 2, 24, 0.85)
-}
+/* .section-plans {
+  background-color: rgb(5, 2, 24, 0.85);
+  height: 350px;
+  height: 100vh;
+} */
 
 .box-plan {
   width: 19.25rem;
@@ -164,6 +167,7 @@ header {
   padding: 25px;
   min-height: 15rem;
   position: relative;
+  background-color: rgb(5, 2, 24, 0.85)
 }
 
 .box-plan>span {
@@ -197,7 +201,7 @@ header {
 
 footer {
   background: #020202;
-  min-height: 300px;
+  height: 136px;
 }
 
 .social-media {
