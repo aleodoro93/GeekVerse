@@ -1,10 +1,19 @@
-const passwordInput = document.getElementById("password");
+
 const alertPassword = document.getElementById("Passwordvalidade");
 const alertConfPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
-var costummers = []; 
-passwordInput.addEventListener("change", function () {
-  if (passwordInput.value.length < 8) {
+let costummers = [];
+
+const StoredClient = localStorage.getItem("clientes");
+if (StoredClient) {
+  costummers = JSON.parse(StoredClient);
+}
+
+
+
+
+password.addEventListener("change", function () {
+  if (password.length < 8) {
     alertPassword.innerHTML = `A senha deve conter mais que 8 digitos`;
     alertPassword.style.color = "red";
     alertPassword.style.textAlign = "center";
@@ -16,7 +25,7 @@ passwordInput.addEventListener("change", function () {
 const confirmapassword = document.getElementById("confpassword");
 confirmapassword.addEventListener("change", validacaopassword);
 function validacaopassword() {
-  if (passwordInput.value != confirmapassword.value) {
+  if (password != confirmapassword.value) {
     alertConfPassword.innerHTML = "As senhas nao combinam, tente novamente!";
     alertConfPassword.style.color = "red";
     alertConfPassword.style.textAlign = "center"
@@ -33,7 +42,6 @@ async function fillendress(cep) {
     if (data.hasOwnProperty("erro")) {
       throw new Error("CEP não encontrado");
     }
-
     document.getElementById("estate").value = data.uf;
     document.getElementById("city").value = data.localidade;
     document.getElementById("district").value = data.bairro;
@@ -52,9 +60,10 @@ cepInput.addEventListener("input", (event) => {
   }
 });
 
-
+/* AQUI COMEÇA A CRIAÇÃO DO CLIENTE */
 class Cliente {
   constructor(name, email, password, rg, cep, city, estate, street, number, complement) {
+    this.id = Cliente.getNextId();
     this.name = name;
     this.email = email;
     this.password = password;
@@ -62,15 +71,28 @@ class Cliente {
     this.cep = cep;
     this.city = city;
     this.estate = estate;
+    this.street = street;
     this.number = number;
     this.complement = complement;
   }
+
+  static getNextId() {
+    if (!Cliente.currentId) {
+      Cliente.currentId = 1;
+    } else {
+      Cliente.currentId++;
+    }
+    return Cliente.currentId;
+  }
 }
 
+
+
+
 btnRegister.addEventListener("click", () => {
+
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
   const rg = document.getElementById("rg").value;
   const cep = document.getElementById("zipcode").value;
   const street = document.getElementById("street").value;
@@ -78,19 +100,13 @@ btnRegister.addEventListener("click", () => {
   const estate = document.getElementById("estate").value;
   const number = document.getElementById("number").value;
   const complement = document.getElementById("complement").value;
-
+  const password = document.getElementById("password").value;
   
-  if (name || email || password || rg || cep || street || city || estate || number === "") {
-    alert("Preencha todos os campos, por favor!")}
 
-    if(name.length === "2"){
-      alert("Insira um nome valido!");
+  var costumerscreate = new Cliente(name, email, password, rg, cep, street, city, estate, number, complement);
+  costummers.push(costumerscreate);
+  localStorage.setItem("clientes", JSON.stringify(costummers));
+  window.location.href = "../login/login.html";
 
-    }
-    
+});
 
-    else {var costumerscreate = new Cliente(name,email,password,rg,cep,city,estate,number,complement);
-      costummers.push(costumerscreate);}});
-
-
- 
