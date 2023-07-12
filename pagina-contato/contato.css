@@ -17,23 +17,24 @@ header {
     top: 0;
     width: 100%;
     height: 80px;
+    
 }
+
 
 body {
-    /* width: 100%;
-    background: url(./imagens/4844225.jpg);
-    animation: degrade 50s infinite alternate; */
+    
     width: 100%;
-background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
-background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
+    background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
+    background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
 
 }
+
 .container-content {
     max-width: 91rem;
     margin: 0 auto;
-  }
+}
 
-  .overlay {
+.overlay {
     width: 100%;
     min-height: 100%;
     position: absolute;
@@ -42,13 +43,14 @@ background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
     left: 0;
     right: 0;
     background-color: rgb(2, 2, 2, 0.85);
-  }
+}
 
- .section-infos>p {
-    max-width: 60rem;
+.section-infos {
+    max-width: 91rem;
     margin: 0 auto;
-  }
-  .content-contato {
+}
+
+.content-contato {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -57,12 +59,13 @@ background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
     border-radius: 20px;
 
 }
+
 .content-contato:hover .carta {
     transform: rotateY(180deg);
     border-radius: 20px;
 
 }
-  
+
 .carta {
     position: absolute;
     width: 100%;
@@ -71,6 +74,7 @@ background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
     transition: all 0.5 ease;
     border-radius: 20px;
 }
+
 .frente {
     position: absolute;
     width: 100%;
@@ -78,15 +82,15 @@ background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
 
     backface-visibility: hidden;
     background: #7564E5;
-    color: white;
     border-radius: 20px;
 }
+
 .imagem {
     max-width: 100%;
     height: 100%;
     border-radius: 20px;
-
 }
+
 .atras {
     text-align: center;
     position: absolute;
@@ -99,17 +103,20 @@ background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
     transform: rotateY(180deg);
     border-radius: 20px;
 }
+
 .title-name {
 
     font-size: 21px;
     margin: 35px;
     font-weight: 700;
 }
+
 .icons {
-    width: 40px;
+    width: 30px;
     background-color: #3FA1C1;
     border-radius: 20px;
-    justify-content: space-between;
+    margin: 20px 10px;
+    
 }
 
 footer {
@@ -126,4 +133,3 @@ footer {
     width: 30px;
     height: auto;
 }
-
