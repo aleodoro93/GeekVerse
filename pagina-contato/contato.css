@@ -25,7 +25,7 @@ body {
     
     width: 100%;
     background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
-    background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
+    background-image: url("../img/background-texto-explicacao-provisorio.jpg");
 
 }
 
@@ -73,6 +73,7 @@ body {
     transform-style: preserve-3d;
     transition: all 0.5 ease;
     border-radius: 20px;
+    transition: 1.5s;
 }
 
 .frente {
@@ -119,17 +120,41 @@ body {
     
 }
 
+/* Aqui começa a estilização do footer */
+/* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
+
 footer {
     background: #020202;
-    min-height: 300px;
-}
-
-.social-media {
+    height: 136px;
+  }
+  
+  .logo-footer {
+    width: 130px;
+  }
+  
+  .text-detail {
+    font-size: 15px;
+  }
+  
+  .social-media {
     display: flex;
     gap: 1rem;
-}
-
-.social-media img {
-    width: 30px;
+  }
+  
+  .social-media img {
+    width: 1.50rem;
     height: auto;
-}
+    opacity: 0.8;
+  }
+  
+  .social-media img:hover {
+    opacity: 1;
+  }
+  
+  .nav-footer>li a {
+    color: #ffffff;
+  }
+  
+  .nav-footer>li a:hover {
+    color: #b908f6;
+  }

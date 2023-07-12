@@ -29,44 +29,36 @@
       <div class="d-flex flex-wrap align-items-center justify-content-between">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
           <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
-          <img src="./imagens/logo-provisoria.png" alt="logo">
+          <img src="../img/logo-provisoria.png" alt="logo">
         </a>
 
         <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Lista de Espera</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
+            <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
+            <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
           </ul>
         </div>
 
         <div class="dropdown d-sm-none">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="./imagens/menu-hamburguer.svg">
+            <img src="../img/menu-hamburguer.svg">
           </button>
           <ul class="dropdown-menu d-xs-none">
-            <li><a class="dropdown-item" href="#">Home</a></li>
-            <li><a class="dropdown-item" href="#">Planos de Detalhes</a></li>
-            <li><a class="dropdown-item" href="#">Lista de Espera</a></li>
-            <li><a class="dropdown-item" href="#">Contatos</a></li>
+            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="../planos/planos.html">Planos de Detalhes</a></li>
+            <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
           </ul>
         </div>
 
         <div class="dropdown text-end">
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="true">
-            <img src="./imagens/leo.png" alt="mdo" title="Leo" width="32" height="32" class="rounded-circle">
           </a>
-
-          <ul class="dropdown-menu text-small"
-            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 34.4px, 0px);"
-            data-popper-placement="bottom-start">
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
-            <hr>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
-          </ul>
+        </ul>
         </div>
       </div>
     </div>
@@ -131,32 +123,48 @@
               <button type="submit" id="btnRegister" class="button-register mb-3">Enviar</button>
             </fieldset>
           </form>
+          <div id="show-in-screen"
         </div>
       </div>
       </div>
       </div>
     </section>
   </main>
-  <footer class="py-5 d-flex flex-column justify-content-between align-items-center">
-    <img src="./imagens/logo-provisoria.png" alt="logo">
-    <ul class="nav justify-content-center">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Planos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Lista de Espera</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contato</a></li>
-    </ul>
-    <div class="social-media">
-      <a href="https://www.instagram.com/" target="_blank">
-        <img src="./imagens/instagram-logo.svg" alt="Logo do Instagram" />
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <div class="bi me-2" width="40" height="32">
+          <img class="logo-footer" src="../img/logo-provisoria.png">
+        </div>
       </a>
-      <a href="https://www.tiktok.com/pt-BR/" target="_blank">
-        <img src="./imagens/tiktok-logo.svg" alt="Logo do TikTok" />
-      </a>
-      <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
-        <img src="./imagens/whatsapp-logo.svg" alt="Logo do WhatsApp" />
-      </a>
+      <p class="text-white text-detail">Squad 8 © 2023</p>
     </div>
-    <p class="text-center text-white mb-0">©️ 2023 Squad 8, Resilia</p>
+
+
+    <ul class="nav justify-content-center nav-footer gap-3">
+      <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+      <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
+      <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
+      <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
+    </ul>
+
+    <ul class="nav justify-content-end list-unstyled d-flex social-media">
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/instagram-logo.svg">
+          </div>
+        </a></li>
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/tiktok-logo.svg">
+          </div>
+        </a></li>
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/whatsapp-logo.svg">
+          </div>
+        </a></li>
+    </ul>
   </footer>
   <script src="./cadastro.js"></script>
 </body>

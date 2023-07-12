@@ -1,6 +1,7 @@
 body {
 
-    background: linear-gradient(black, black, #43bdaf) 
+    background: url("../img/backpanprovisorio.jpg");
+    background-size: cover;
 }
 
 main {
@@ -62,8 +63,8 @@ p {
     text-align: center;
     align-items: center;
     display: block;
-    background-color: rgba(255, 255, 255, 0.096);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.113);
+    backdrop-filter: blur(23px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -146,7 +147,7 @@ margin-bottom: 10px;
 margin-top: 50px;
 }
 
-.cta-button {
+.cta-text {
     display: inline-block;
     padding: 12px 24px;
     font-size: 18px;
@@ -163,7 +164,7 @@ margin-top: 50px;
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-text:hover {
     background-color: #B573FA;
 }
 
@@ -204,7 +205,10 @@ margin-top: 50px;
     transform: rotateY(180deg);
 }
 
+li {
 
+    color: white;
+}
 .card-itens ol {
     position: absolute;
     width: 100%;
@@ -245,3 +249,42 @@ margin-top: 50px;
 .card-itens ol li {
     padding: 5px 0;
 }
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO FOOTER */
+footer {
+    background: #020202;
+    height: 136px;
+  }
+  
+  .logo-footer {
+    width: 130px;
+  }
+  
+  .text-detail {
+    font-size: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-media img {
+    width: 1.50rem;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .social-media img:hover {
+    opacity: 1;
+  }
+  
+  .nav-footer>li a {
+    color: #ffffff;
+  }
+  
+  .nav-footer>li a:hover {
+    color: #b908f6;
+  }
+
+/* AQUI TERMINA A ESTILIZAÇÃO DO FOOTER */

@@ -1,12 +1,9 @@
 * {
-  /* Reset CSS */
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
-
   font-family: 'Exo 2', sans-serif;
-  /* font-family: 'Inter', sans-serif; */
 }
 
 header {
@@ -25,8 +22,22 @@ body {
 }
 
 main {
-  background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
+  background-image: url("../img/background-texto-explicacao-provisorio.jpg");
+  animation: backgroundmove 35s infinite alternate;
 }
+
+@keyframes backgroundmove {
+  0% {
+    background-position-x: 0%;
+
+}
+
+100% {
+    background-position-x: 100%;
+}
+}
+  
+
 
 .container-content {
   max-width: 91rem;
@@ -137,9 +148,20 @@ fieldset {
 /* AQUI TERMINA A ESTILIZAÇÃO DO BOTÃO ENVIAR */
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DO FOOTER */
+/* Aqui começa a estilização do footer */
+/* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
+
 footer {
   background: #020202;
-  min-height: 300px;
+  height: 136px;
+}
+
+.logo-footer {
+  width: 130px;
+}
+
+.text-detail {
+  font-size: 15px;
 }
 
 .social-media {
@@ -148,8 +170,23 @@ footer {
 }
 
 .social-media img {
-  width: 30px;
+  width: 1.50rem;
   height: auto;
+  opacity: 0.8;
 }
+
+.social-media img:hover {
+  opacity: 1;
+}
+
+.nav-footer>li a {
+  color: #ffffff;
+}
+
+.nav-footer>li a:hover {
+  color: #b908f6;
+}
+
+/* Aqui termina a estilização do footer */
 
 /* AQUI TERMINA A ESTILIZAÇÃO DO FOOTER */

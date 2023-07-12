@@ -23,7 +23,45 @@
 
 <body>
     <header>
-        <!-- CÓDIGO DO FOOTER VEM AQUI -->
+        <header class="py-2">
+            <div class="px-2">
+              <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+                  <img src="../img/logo-provisoria.png" alt="logo">
+                </a>
+        
+                <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
+                    <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
+                  </ul>
+                </div>
+        
+                <div class="dropdown d-sm-none">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../img/menu-hamburguer.svg">
+                  </button>
+                  <ul class="dropdown-menu d-xs-none">
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="../planos/planos.html">Planos de Detalhes</a></li>
+                    <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+                    <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
+                  </ul>
+                </div>
+        
+                <div class="dropdown text-end">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="true">
+                  </a>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </header>
     </header>
     <main>
         <h1>Planos e Detalhes</h1>
@@ -32,7 +70,7 @@
 
             <div class="card-planos">
                 <div class="image-container">
-                    <img src="./imagens/box-platina.png" alt="Caixa de prateada com itens dentro">
+                    <img src="../img/box-platina.png" alt="Caixa de prateada com itens dentro">
                 </div>
                 <span>PLATINA</span>
                 <span class="valor">49,90R$</span>
@@ -44,13 +82,13 @@
                     <li>Funkos</li>
                     <li>Outros produtos geek.</li>
                 </ul>
-                <img class="icon-1" src="./imagens/platina.png" alt="Insignia prateada">
+                <img class="icon-1" src="../img/platina.png" alt="Insignia prateada">
             </div>
             </div>
 
             <div class="card-planos">
                 <div class="image-container">
-                    <img src="./imagens/box-diamante.png" alt="Caixa diamante com itens dentro">
+                    <img src="../img/box-diamante.png" alt="Caixa diamante com itens dentro">
                 </div>
                 <span>DIAMANTE</span>
                 <span class="valor">79,90R$</span>
@@ -60,11 +98,11 @@
                     <li>Brindes extras em cada caixa.</li>
                     <li>Participação em sorteios com a chance de ganhar prêmios incríveis.</li>
                 </ul>
-                <img class="icon-2" src="./imagens/diamond.png" alt="Insignia Diamante">
+                <img class="icon-2" src="../img/diamond.png" alt="Insignia Diamante">
             </div>
         </section>
         <header>
-            <button class="cta-button">Entre para a lista de espera</button>
+            <a href="../pagina-contato/contato.html"><pclass="cta-text">Clique aqui em caso de dúvidas</p></a>
             <h3>O QUE VEM NA BOX</h3>
             <p>Com o GeekVerseBox, os assinantes mergulham no universo geek a cada caixa recebida,
                 vivenciando uma experiência emocionante e única.
@@ -73,7 +111,7 @@
         <section class="planos">
             <div class="itens">
                 <div class="card-itens">
-                    <img src="./imagens/hqs-2.png" alt="Várias revistas de mangá">
+                    <img src="../img/hqs-2.png" alt="Várias revistas de mangá">
                     <Ol>
                         <li>HQ's</li>
                         <li>Mangás</li>
@@ -84,7 +122,7 @@
             </div>
             <div class="itens">
                 <div class="card-itens">
-                    <img src="./imagens/camisetas-4.png"
+                    <img src="../img/camisetas-4.png"
                         alt="Uma menina loira e outra morena, vestindo camisetas de personagens">
                     <Ol>
                         <li>Camisetas</li>
@@ -95,7 +133,7 @@
             </div>
             <div class="itens">
                 <div class="card-itens">
-                    <img src="./imagens/funko-1.png" alt="Boneco de plástico pequeno, estilo capitão américa">
+                    <img src="../img/funko-1.png" alt="Boneco de plástico pequeno, estilo capitão américa">
                     <Ol>
                         <li>Funko</li>
                         <li>Amigurumi</li>
@@ -105,7 +143,7 @@
             </div>
             <div class="itens">
                 <div class="card-itens">
-                    <img src="./imagens/canecas-1.png" alt="Caneca com detalhes azul - estilo star wars">
+                    <img src="../img/canecas-1.png" alt="Caneca com detalhes azul - estilo star wars">
                     <Ol>
                         <li>Caneca</li>
                         <li>Copo</li>
@@ -115,7 +153,7 @@
             </div>
             <div class="itens">
                 <div class="card-itens">
-                    <img src="./imagens/porta-copos-1.png" alt="Porta copos de personagens de anime">
+                    <img src="../img/porta-copos-1.png" alt="Porta copos de personagens de anime">
                     <Ol>
                         <li>Porta copos</li>
                         <li>Adesivos</li>
@@ -127,7 +165,42 @@
 
 
     <footer>
-        <!-- CÓDIGO DO FOOTER VEM AQUI -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <div class="bi me-2" width="40" height="32">
+                  <img class="logo-footer" src="../img/logo-provisoria.png">
+                </div>
+              </a>
+              <p class="text-white text-detail">Squad 8 © 2023</p>
+            </div>
+        
+        
+            <ul class="nav justify-content-center nav-footer gap-3">
+              <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+              <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
+              <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
+              <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
+            </ul>
+        
+            <ul class="nav justify-content-end list-unstyled d-flex social-media">
+              <li class="ms-3"><a href="#">
+                  <div class="bi" width="24" height="24">
+                    <img src="../img/instagram-logo.svg">
+                  </div>
+                </a></li>
+              <li class="ms-3"><a href="#">
+                  <div class="bi" width="24" height="24">
+                    <img src="../img/tiktok-logo.svg">
+                  </div>
+                </a></li>
+              <li class="ms-3"><a href="#">
+                  <div class="bi" width="24" height="24">
+                    <img src="../img/whatsapp-logo.svg">
+                  </div>
+                </a></li>
+            </ul>
+          </footer>
     </footer>
 </body>
 

@@ -12,23 +12,26 @@ if (StoredClient) {
 
 
 
-password.addEventListener("change", function () {
-  if (password.length < 8) {
+password.addEventListener("change", function validarPass() {
+  if (password.value.length < 8) {
     alertPassword.innerHTML = `A senha deve conter mais que 8 digitos`;
     alertPassword.style.color = "red";
     alertPassword.style.textAlign = "center";
-    alertPassword.style.padding = "5px"
+    alertPassword.style.fontSize = "10px"
+
   } else {
     alertPassword.innerHTML = "";
   }
+
 });
 const confirmapassword = document.getElementById("confpassword");
 confirmapassword.addEventListener("change", validacaopassword);
 function validacaopassword() {
-  if (password != confirmapassword.value) {
+  if (password.value != confirmapassword.value) {
     alertConfPassword.innerHTML = "As senhas nao combinam, tente novamente!";
     alertConfPassword.style.color = "red";
-    alertConfPassword.style.textAlign = "center"
+    alertConfPassword.style.fontSize = "10px"
+
   } else {
     alertConfPassword.innerHTML = "";
   }
@@ -101,12 +104,15 @@ btnRegister.addEventListener("click", () => {
   const number = document.getElementById("number").value;
   const complement = document.getElementById("complement").value;
   const password = document.getElementById("password").value;
-  
+  const showScreen  = document.getElementById("show-in-screen");
 
   var costumerscreate = new Cliente(name, email, password, rg, cep, street, city, estate, number, complement);
   costummers.push(costumerscreate);
   localStorage.setItem("clientes", JSON.stringify(costummers));
-  window.location.href = "../login/login.html";
+  
+  
+
+
 
 });
 

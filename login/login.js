@@ -8,7 +8,7 @@ function getClientesFromLocalStorage() {
 }
 
 const costummers = getClientesFromLocalStorage();
-console.log(costummers);
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("formulario");
@@ -54,13 +54,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (matchedCustomer) {
       alert("Login bem-sucedido!");
-
+      window.location.href = "../planos/planos.html"
       form.reset();
     } else if (unmatchedCustomer){
       alert("Email ou senha inválidos. Tente novamente.");
     }else {
       alert("usuario nao encontrado, cadastre-se")
-      window.location.href = "../cadastro/cadastro.html"
+      
     }
     
   });

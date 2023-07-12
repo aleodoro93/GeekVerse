@@ -72,15 +72,15 @@ header {
 }
 
 .carousel-item.item-1 {
-  background-image: url("./images/carrossel-imagem-provisoria-1.png");
+  background-image: url("../img/carrossel-imagem-provisoria-1.png");
 }
 
 .carousel-item.item-2 {
-  background-image: url("./images/carrossel-imagem-provisoria-2.png");
+  background-image: url("../img/carrossel-imagem-provisoria-2.png");
 }
 
 .carousel-item.item-3 {
-  background-image: url("./images/carrossel-imagem-provisoria-3.png");
+  background-image: url("../img/carrossel-imagem-provisoria-3.png");
 }
 
 .carousel-caption>h2 {
@@ -108,7 +108,7 @@ header {
 }
 
 .section-infos {
-  background-image: url("./images/background-texto-explicacao-provisorio.jpg");
+  background-image: url("../img/background-texto-explicacao-provisorio.jpg");
   min-height: 100vh;
 }
 
@@ -147,7 +147,7 @@ header {
 .infos-boxes>ul>li::before {
   content: "";
   display: inline-block;
-  background-image: url(./images/star-fill.svg);
+  background-image: url(../img/star-fill.svg);
   height: 12px;
   width: 12px;
   background-size: contain;
@@ -213,14 +213,35 @@ footer {
   height: 136px;
 }
 
+.logo-footer {
+  width: 130px;
+}
+
+.text-detail {
+  font-size: 15px;
+}
+
 .social-media {
   display: flex;
   gap: 1rem;
 }
 
 .social-media img {
-  width: 30px;
+  width: 1.50rem;
   height: auto;
+  opacity: 0.8;
+}
+
+.social-media img:hover {
+  opacity: 1;
+}
+
+.nav-footer>li a {
+  color: #ffffff;
+}
+
+.nav-footer>li a:hover {
+  color: #b908f6;
 }
 
 /* Aqui termina a estilização do footer */
