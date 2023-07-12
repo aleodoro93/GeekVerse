@@ -1,0 +1,247 @@
+body {
+
+    background: linear-gradient(black, black, #43bdaf) 
+}
+
+main {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1,
+h3 {
+    color: #FAFA4D;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: #B573FA;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+p {
+    color: #FA7A41;
+    font-size: 26px;
+    margin-right: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.card-planos span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #43bdaf;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* container -pai */
+.planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+.card-planos {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #B573FA;
+    box-shadow: 3px 3px 30px #B573FA;
+}
+
+
+.card-planos .image-container {
+    border-radius: 1rem;
+}
+
+.card-planos .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+    transition: opacity 0.3s;
+}
+
+.card-planos .image-container .second-image {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-planos .image-container:hover .second-image {
+    opacity: 1;
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+span.valor {
+    display: block;
+    color: #FAFA4D;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-planos ul {
+    text-align: left;
+}
+
+.card-planos ul li {
+    padding: 5px 0;
+}
+
+ul li::marker {
+    color: #B573FA;
+    font-size: 20px;
+    color: #43bdaf;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.icon-1 {
+margin-bottom: 10px;
+}
+.icon-2 {
+margin-top: 50px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: #FA7A41;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #B573FA;
+}
+
+
+
+
+.itens {
+    min-width: fit-content;
+    width: calc(20% - 95px);
+    height: 200px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 2px solid #41FAE4;
+    box-shadow: 3px 3px 40px #000000;
+}
+
+.itens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-itens {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.itens:hover .card-itens {
+    transform: rotateY(180deg);
+}
+
+
+.card-itens ol {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-itens ol {
+    transform: rotateY(180deg);
+    color: #FAFA4D;
+    background-color: #000000db;
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-itens ol {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-itens ol li {
+    padding: 5px 0;
+}
