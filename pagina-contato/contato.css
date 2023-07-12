@@ -5,8 +5,8 @@
     border: 0;
     box-sizing: border-box;
 
-    /* Adiciona fonte*/
-    font-family: "Inter", sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
 }
 
 header {
@@ -20,35 +20,35 @@ header {
 }
 
 body {
-    width: 100%;
+    /* width: 100%;
     background: url(./imagens/4844225.jpg);
-    animation: degrade 50s infinite alternate;
+    animation: degrade 50s infinite alternate; */
+    width: 100%;
+background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
+background-image: url("./imagens/background-texto-explicacao-provisorio.jpg");
 
 }
+.container-content {
+    max-width: 91rem;
+    margin: 0 auto;
+  }
 
-@keyframes degrade {
+  .overlay {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(2, 2, 2, 0.85);
+  }
 
-    0% {
-        background-position-x: 0%;
-    }
-
-    100% {
-        background-position-x: 100%;
-    }
-}
-
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 50px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-
-}
-
-.containerContato {
+ .section-infos>p {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .content-contato {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -57,8 +57,13 @@ section {
     border-radius: 20px;
 
 }
+.content-contato:hover .carta {
+    transform: rotateY(180deg);
+    border-radius: 20px;
 
-.cartaUm {
+}
+  
+.carta {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -66,13 +71,6 @@ section {
     transition: all 0.5 ease;
     border-radius: 20px;
 }
-
-.containerContato:hover .cartaUm {
-    transform: rotateY(180deg);
-    border-radius: 20px;
-
-}
-
 .frente {
     position: absolute;
     width: 100%;
@@ -83,21 +81,12 @@ section {
     color: white;
     border-radius: 20px;
 }
-
 .imagem {
     max-width: 100%;
     height: 100%;
     border-radius: 20px;
 
 }
-
-.icons {
-    width: 40px;
-    background-color: #3FA1C1;
-    border-radius: 20px;
-    justify-content: space-between;
-}
-
 .atras {
     text-align: center;
     position: absolute;
@@ -110,48 +99,17 @@ section {
     transform: rotateY(180deg);
     border-radius: 20px;
 }
+.title-name {
 
-h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    font-size: 80px;
-    margin: 50px;
-
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
-}
-
-h3 {
-
-    font-size: 30px;
+    font-size: 21px;
     margin: 35px;
+    font-weight: 700;
 }
-
-h4 {
-    color: black;
-    font-size: 20px;
-    margin: 20px;
-}
-
-h5 {
-    color: #D4E564;
-    font-size: 10px;
-
-}
-
-p {
-    color: white;
-    text-align: center;
-    font-size: 15gitpx;
-    margin: 20px;
-
+.icons {
+    width: 40px;
+    background-color: #3FA1C1;
+    border-radius: 20px;
+    justify-content: space-between;
 }
 
 footer {
@@ -168,3 +126,4 @@ footer {
     width: 30px;
     height: auto;
 }
+
