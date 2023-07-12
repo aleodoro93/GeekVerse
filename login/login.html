@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,14 +21,15 @@
         <!-- Falta adicionar header final -->
     </header>
     <main>
-        <form>
+        <form id="formulario">
             <fieldset>
                 <h2>Login</h2>
                 <label for="email">E-mail:</label>
-                <input type="text" id="email">
+                <input type="text" id="email" required>
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha">
+                <input type="password" id="senha" required>
+                
                 <button type="submit" class="enviar">Entrar</button>
                 <a href="../login-recuperacao/log-recp.html">Esqueceu sua senha?</a>
             </fieldset>
@@ -56,7 +58,7 @@
             <p class="text-center text-white mb-0">© 2023 Squad 8, Resilia</p>
         </footer>
     </footer>
-    <script src="/Js/valida.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
