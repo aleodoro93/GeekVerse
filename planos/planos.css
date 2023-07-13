@@ -69,6 +69,11 @@ main {
     background-color: rgb(10, 15, 20, 0.85);
 }
 
+
+.blur-card-home{
+    backdrop-filter: blur(8px);
+  }
+
 .background-text {
     background-color: rgb(10, 15, 20, 0.45);
     padding: 1rem;
