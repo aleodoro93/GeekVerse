@@ -28,6 +28,12 @@ body {
 
 }
 
+.background-text {
+  background-color: rgb(2, 2, 2, 0.45);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 main {
   background-image: url("../img/background-section-contact.jpg");
   animation: backgroundmove 60s infinite alternate;

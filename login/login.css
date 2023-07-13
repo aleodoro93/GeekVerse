@@ -58,6 +58,12 @@ body {
     background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
 }
 
+.background-text {
+    background-color: rgb(2, 2, 2, 0.45);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 /* AQUI TERMINA A ESTILIZAÇÃO DO BODY */
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DA MAIN */

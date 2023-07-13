@@ -97,6 +97,12 @@ main {
     margin: 0 auto;
 }
 
+.background-text {
+    background-color: rgb(2, 2, 2, 0.45);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 .overlay {
     width: 100%;
     min-height: 100%;
