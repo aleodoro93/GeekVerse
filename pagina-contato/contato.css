@@ -10,7 +10,7 @@
 }
 
 header {
-  background-color: rgb(2, 2, 2, 0.5);
+  background-color: rgb(10, 15, 20, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 1000;
@@ -70,7 +70,7 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(2, 2, 2, 0.85);
+  background-color: rgb(10, 15, 20, 0.85);
 }
 
 .section-infos {
@@ -128,7 +128,7 @@ main {
 
   backface-visibility: hidden;
   background: #02B0DC;
-  color: black;
+  color: #0A0F14;
   transform: rotateY(180deg);
   border-radius: 20px;
 }
@@ -156,7 +156,7 @@ main {
 /* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
 
 footer {
-  background: #020202;
+  background: #0A0F14;
   height: 136px;
 }
 

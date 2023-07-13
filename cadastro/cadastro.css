@@ -10,7 +10,7 @@
 }
 
 header {
-  background-color: rgb(2, 2, 2, 0.5);
+  background-color: rgb(10, 15, 20, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 1000;
@@ -51,7 +51,7 @@ header {
 
 .btn-home:hover {
   background-color: #b908f6;
-  color: #000200;
+  color: #0A0F14;
 }
 
 body {
@@ -141,10 +141,10 @@ label {
 }
 
 input {
-  border: 2px solid rgb(0, 2, 0);
+  border: 2px solid rgb(10, 15, 20);
   border-radius: 10px;
   text-align: center;
-  box-shadow: 1px 1px 10px #000200;
+  box-shadow: 1px 1px 10px rgb(10, 15, 20);
   width: fit-content;
   margin-top: 2px;
 }
@@ -167,7 +167,7 @@ fieldset {
 /* AQUI COMEÇA A ESTILIZAÇÃO DO BOTÃO ENVIAR */
 .button-register {
   border: 2px solid transparent;
-  box-shadow: 0.5px 0.5px 2px #000200;
+  box-shadow: 0.5px 0.5px 2px #0A0F14;
   border-radius: 20px;
   min-width: 25%;
   height: 30px;
@@ -181,7 +181,7 @@ fieldset {
 }
 
 .button-register:hover {
-  color: #000200;
+  color: #0A0F14;
   background-color: #b908f6;
   transition: 1s;
   transform: scale(1.6);
@@ -194,7 +194,7 @@ fieldset {
 /* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
 
 footer {
-  background: #020202;
+  background: #0A0F14;
   height: 136px;
 }
 
