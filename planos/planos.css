@@ -29,7 +29,7 @@ header {
 }
 
 .nav-header>li a:hover {
-    color: #b908f6;
+    color: #BAA0F2;
 }
 
 body {
@@ -84,7 +84,7 @@ main {
     padding-top: 58px;
 }
 
-.container-plans-details h3 {
+.text-title-page {
     color: #51D93D;
 }
 
@@ -116,7 +116,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, rgba(117, 100, 229, 0.5) 45%, transparent 100%);
+    background: rgba(123, 123, 123, 0.396);
     border-radius: 8px;
     padding: 25px;
     min-height: 15rem;
@@ -202,7 +202,7 @@ footer {
 }
 
 .month-p {
-    color: #FA7A41;
+    color: #BAA0F2;
     font-size: 26px;
     margin-right: 25px;
     text-align: center;
@@ -212,7 +212,7 @@ footer {
 
 span.valor {
     display: block;
-    color: #FAFA4D;
+    color: #51D93D;
     font-size: 18px;
     text-align: center;
     margin-bottom: 10px;
@@ -232,8 +232,8 @@ span.valor {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: white;
-    background-color: #FA7A41;
+    color: #020202;
+    background-color: #51D93D;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -241,7 +241,8 @@ span.valor {
 }
 
 .text-contact:hover {
-    background-color: #B573FA;
+    background-color: #BAA0F2;
+    color: #ffffff;
 }
 
 .itens {
@@ -295,7 +296,7 @@ span.valor {
 
 .card-itens ol {
     transform: rotateY(180deg);
-    color: #FAFA4D;
+    color: #51D93D;
     background-color: #000000db;
     font-weight: bold;
     font-size: 26px;
@@ -320,14 +321,14 @@ span.valor {
 }
 
 h2 {
-    color: #B573FA;
+    color: #BAA0F2;
 }
 
 .card-planos span {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #0086f3;
+    color: #02B0DC;
     margin-top: 10px;
     font-size: 30px;
     text-align: center;
@@ -336,7 +337,7 @@ h2 {
 
 span.valor {
     display: block;
-    color: #FAFA4D;
+    color: #51D93D;
     font-size: 18px;
     text-align: center;
     margin-bottom: 10px;
@@ -351,7 +352,7 @@ span.valor {
 }
 
 ul li::marker {
-    color: #0086f3;
+    color: #02B0DC;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -360,7 +361,7 @@ ul li::marker {
 }
 
 ul li {
-    color: #B573FA;
+    color: #BAA0F2;
     font-size: 18px;
 }
 
@@ -397,7 +398,7 @@ ul li {
 }
 
 .nav-header>li a:hover {
-    color: #b908f6;
+    color: #BAA0F2;
 }
 
 .nav-footer>li a {
@@ -405,5 +406,5 @@ ul li {
 }
 
 .nav-footer>li a:hover {
-    color: #b908f6;
+    color: #BAA0F2;
 }

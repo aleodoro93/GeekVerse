@@ -29,7 +29,7 @@ body {
 }
 
 main {
-  background-image: url("../img/background-section-login.jpg");
+  background-image: url("../img/background-section-contact.jpg");
   animation: backgroundmove 60s infinite alternate;
 }
 

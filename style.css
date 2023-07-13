@@ -124,12 +124,11 @@ header {
 .section-infos>p {
   max-width: 60rem;
   margin: 0 auto;
-  /* color: #51D93D; */
 }
 
-/* h3 {
+h3 {
   color: #51D93D;
-} */
+}
 
 .overlay-infos {
   width: 100%;
