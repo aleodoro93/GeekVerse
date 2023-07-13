@@ -119,8 +119,8 @@ const matchRg = costummers.find((costumer)=> costumer.rg === rg);
     alertPassword.style.textAlign = "center";
     alertPassword.style.fontSize = "10px";
     return;
-  } if (password !== confPassInpt.value) {
-    alertConfPassword.innerHTML = "digite a senha certa bundao"
+  } if (confPassInpt.value !== password  ) {
+
     alertConfPassword.innerHTML = "As senhas não coincidem, tente novamente!";
     alertConfPassword.style.color = "red";
     alertConfPassword.style.fontSize = "10px";
