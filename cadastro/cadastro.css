@@ -140,6 +140,10 @@ label {
   margin-bottom: 2px;
 }
 
+.text-forget-pw {
+  color: #02B0DC;
+}
+
 input {
   border: 2px solid rgb(10, 15, 20);
   border-radius: 10px;

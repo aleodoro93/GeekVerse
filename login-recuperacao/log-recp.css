@@ -227,6 +227,10 @@ footer {
     opacity: 0.8;
 }
 
+.text-forget-pw {
+    color: #02B0DC;
+}
+
 .social-media img:hover {
     opacity: 1;
 }
