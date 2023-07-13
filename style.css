@@ -86,13 +86,11 @@ header {
   font-size: 50px;
   color: #F601FF;
   font-weight: 700;
-
 }
 
 .carousel-caption>p {
   font-size: 20px;
   color: #FFFFFF;
-
 }
 
 .overlay {
@@ -109,6 +107,18 @@ header {
 .section-infos {
   background-image: url("../img/background-texto-explicacao-provisorio.jpg");
   min-height: 100vh;
+  animation: backgroundmove 35s infinite alternate;
+}
+
+@keyframes backgroundmove {
+  0% {
+    background-position-x: 0%;
+
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
 }
 
 .section-infos>p {
