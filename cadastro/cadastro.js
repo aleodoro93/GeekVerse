@@ -2,6 +2,7 @@
 const alertPassword = document.getElementById("Passwordvalidade");
 const alertConfPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
+const confPassInpt = document.getElementById("confpassword")
 let costummers = [];
 
 const StoredClient = localStorage.getItem("clientes");
@@ -12,30 +13,6 @@ if (StoredClient) {
 
 
 
-password.addEventListener("change", function validarPass() {
-  if (password.value.length < 8) {
-    alertPassword.innerHTML = `A senha deve conter mais que 8 digitos`;
-    alertPassword.style.color = "red";
-    alertPassword.style.textAlign = "center";
-    alertPassword.style.fontSize = "10px"
-
-  } else {
-    alertPassword.innerHTML = "";
-  }
-
-});
-const confirmapassword = document.getElementById("confpassword");
-confirmapassword.addEventListener("change", validacaopassword);
-function validacaopassword() {
-  if (password.value != confirmapassword.value) {
-    alertConfPassword.innerHTML = "As senhas nao combinam, tente novamente!";
-    alertConfPassword.style.color = "red";
-    alertConfPassword.style.fontSize = "10px"
-
-  } else {
-    alertConfPassword.innerHTML = "";
-  }
-}
 /* aqui puxa a api */
 async function fillendress(cep) {
   try {
@@ -80,20 +57,21 @@ class Cliente {
   }
 
   static getNextId() {
-    if (!Cliente.currentId) {
-      Cliente.currentId = 1;
+    let currentId = localStorage.getItem('lastClientId');
+    if (!currentId) {
+      currentId = 1;
     } else {
-      Cliente.currentId++;
+      currentId = parseInt(currentId) + 1;
     }
-    return Cliente.currentId;
+    localStorage.setItem('lastClientId', currentId);
+    return currentId;
   }
 }
 
 
-
-
-btnRegister.addEventListener("click", () => {
-
+const form = document.getElementById("reg-form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const rg = document.getElementById("rg").value;
@@ -104,15 +82,55 @@ btnRegister.addEventListener("click", () => {
   const number = document.getElementById("number").value;
   const complement = document.getElementById("complement").value;
   const password = document.getElementById("password").value;
-  const showScreen  = document.getElementById("show-in-screen");
 
+  if (name === "" || email === "" || rg === "" || cep === "" || street === "" || city === "" || estate === "" || number === "" || complement === "" ||
+    password === "") {
+    alert("Prencha todos os campos! SPOK!");
+    return;
+  }
+
+  if (name.length < 3){
+    alert("Digite um nome valido!");
+    return;
+  }
+
+  
+  const matchEmail = costummers.find((costumer)=> costumer.email === email);
+  if(matchEmail){
+  alert("Email ja cadastrado, tente novamente!");
+  return;
+}
+const matchRg = costummers.find((costumer)=> costumer.rg === rg);
+  if(matchRg){
+    alert("RG já cadastrado, tente novamente!");
+    return
+  }
+
+  if (rg.length < 8 || rg.length > 10) {
+    alert("Digite um RG valido!");
+    return;
+  }
+
+
+
+  if (password.length < 8) {
+    alertPassword.innerHTML = "A senha deve conter mais de 8 caracteres";
+    alertPassword.style.color = "red";
+    alertPassword.style.textAlign = "center";
+    alertPassword.style.fontSize = "10px";
+    return;
+  } if (password !== confPassInpt.value) {
+    alertConfPassword.innerHTML = "digite a senha certa bundao"
+    alertConfPassword.innerHTML = "As senhas não coincidem, tente novamente!";
+    alertConfPassword.style.color = "red";
+    alertConfPassword.style.fontSize = "10px";
+    return;
+  } else {
+    alertPassword.innerHTML = "";
+    alertConfPassword.innerHTML = ""
+  }
   var costumerscreate = new Cliente(name, email, password, rg, cep, street, city, estate, number, complement);
   costummers.push(costumerscreate);
   localStorage.setItem("clientes", JSON.stringify(costummers));
-  
-  
-
-
-
+  form.submit()
 });
-
