@@ -73,7 +73,7 @@ body {
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DA MAIN */
 main {
-    background-image: url("../img/background-texto-explicacao-provisorio.jpg");
+    background-image: url("../img/background-section-rec-login.jpg");
     min-height: 72vh;
     animation: backgroundmove 35s infinite alternate;
 }

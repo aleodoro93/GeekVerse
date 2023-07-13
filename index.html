@@ -31,13 +31,27 @@
           <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
           <img src="../img/logo-provisoria.png" alt="logo">
         </a>
-
-        <div class="text-end">
+        <!-- AQUI COMEÇA OS BOTÕES ENTRAR E CADASTRO NA LISTA DE ESPERA -->
+        <div class="text-end text-end d-none d-lg-block">
           <a href="./login/login.html"><button type="button" class="btn-home btn-login me-2">Entrar</button></a>
           <a href="./cadastro/cadastro.html"><button type="button" class="btn-home btn-lista-espera">Cadastro na Lista
               de Espera
             </button></a>
         </div>
+        <!-- AQUI TERMINA OS BOTÕES ENTRAR E CADASTRO NA LISTA DE ESPERA -->
+        <!-- AQUI COMEÇA O MENU HAMBURGER -->
+        <div class="dropdown d-sm-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="../img/menu-hamburguer.svg"
+              alt="caixa com três linhas que quando a tela for menor é assionado para ser responsivo">
+          </button>
+          <ul class="dropdown-menu d-xs-none">
+            <li><a class="dropdown-item" href="./login/login.html">Entrar</a></li>
+            <li><a class="dropdown-item" href="./cadastro/cadastro.html">Cadastro - Lista de Espera</a></li>
+          </ul>
+        </div>
+        <!-- AQUI TERMINA O MENU HAMBURGER -->
       </div>
     </div>
   </header>

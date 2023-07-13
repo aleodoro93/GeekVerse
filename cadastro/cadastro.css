@@ -60,7 +60,7 @@ body {
 }
 
 main {
-  background-image: url("../img/background-texto-explicacao-provisorio.jpg");
+  background-image: url("../img/background-section-wait-list.jpg");
   animation: backgroundmove 35s infinite alternate;
 }
 
@@ -88,7 +88,7 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(2, 2, 2, 0.80);
+  background-color: rgb(2, 2, 2, 0.85);
 }
 
 .container-wait-list {
@@ -98,7 +98,7 @@ main {
   margin-top: 70px;
   /* justify-content: center; */
   /* width: 50%; */
-  /* height: 100vh; */
+  min-height: calc(100vh - 4.25rem);
   /* margin-bottom: 70px; */
 }
 

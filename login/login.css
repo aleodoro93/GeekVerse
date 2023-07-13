@@ -62,8 +62,8 @@ body {
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DA MAIN */
 main {
-    background-image: url("../img/background-texto-explicacao-provisorio.jpg");
-    animation: backgroundmove 35s infinite alternate;
+    background-image: url("../img/background-section-login.jpg");
+    animation: backgroundmove 60s infinite alternate;
 }
 
 @keyframes backgroundmove {
@@ -101,6 +101,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
+    height: calc(100vh - 4.25rem);
 }
 
 .container-form h3 {
@@ -112,7 +113,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
-    min-height: 15rem;
+    min-height: 17rem;
     position: relative;
     border-radius: 20px;
     /* align-items: center; */
