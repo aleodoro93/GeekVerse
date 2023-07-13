@@ -1,0 +1,246 @@
+* {
+    /* RESET CSS */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    /* Adiciona fonte*/
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO HEADER */
+
+header {
+    background-color: rgb(10, 15, 20, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.btn-home {
+    border-radius: 24px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    transition: all 0.2s;
+}
+
+
+
+.btn-lista-espera {
+    background-color: #51D93D;
+    color: #0A0F14;
+    border: 2px solid transparent;
+}
+
+.nav-header>li a {
+    color: #ffffff;
+}
+
+.nav-header>li a:hover {
+    color: #b908f6;
+}
+
+/* AQUI TERMINA A ESTILIZAÇÃO DO HEADER */
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO BODY */
+body {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(2, 2, 2, 1) 0%, rgba(35, 30, 68, 1) 25%, rgba(60, 51, 117, 1) 50%, rgba(85, 73, 167, 1) 75%, rgba(117, 100, 229, 1) 100%);
+}
+
+.background-text {
+    background-color: rgb(10, 15, 20, 0.45);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* AQUI TERMINA A ESTILIZAÇÃO DO BODY */
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DA MAIN */
+main {
+    background-image: url("../img/background-section-login.jpg");
+    animation: backgroundmove 60s infinite alternate;
+}
+
+@keyframes backgroundmove {
+    0% {
+        background-position-x: 0%;
+
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/* AQUI TERMINA A ESTILIZAÇÃO DA MAIN */
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO CONTAINER DA PÁGINA */
+.container-content {
+    max-width: 91rem;
+    margin: 0 auto;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(10, 15, 20, 0.80);
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: calc(100vh - 4.25rem);
+}
+
+.container-form h3 {
+    color: #51D93D;
+}
+
+.container-form .columns-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    min-height: 17rem;
+    position: relative;
+    border-radius: 20px;
+    /* align-items: center; */
+}
+
+form {
+    border-radius: 20px;
+    border: 2px solid rgb(2, 176, 220);
+    background: rgba(123, 123, 123, 0.396);
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    box-shadow: -1.5px 1.5px 3px 5px #050505c4;
+}
+
+label {
+    color: #51D93D;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.9;
+    margin-bottom: 2px;
+}
+
+input {
+    border: 2px solid rgb(10, 15, 20);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 10px #0A0F14;
+    width: fit-content;
+    margin-top: 2px;
+}
+
+input:focus {
+    background: #F2C9F2;
+}
+
+fieldset {
+    flex-direction: row;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.form-style {
+    border-radius: 20px;
+}
+
+.text-forget-pw {
+    color: #02B0DC;
+}
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO BOTÃO ENVIAR */
+.button-register {
+    border: 2px solid transparent;
+    box-shadow: 0.5px 0.5px 2px #0A0F14;
+    border-radius: 20px;
+    width: 51%;
+    height: 30px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.9px;
+    background-color: #51D93D;
+    color: #0A0F14;
+    margin: 0 auto;
+}
+
+.button-register:hover {
+    color: #0A0F14;
+    background-color: #F2C9F2;
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+/* AQUI TERMINA A ESTILIZAÇÃO DO BOTÃO ENVIAR */
+
+/* AQUI COMEÇA A ESTILIZAÇÃO DO FOOTER */
+
+
+
+
+
+/* Aqui começa a estilização do footer */
+/* Estou utilizando utilitários CSS do Bootstrap, portanto para funcionar deve importar o CSS do Bootstrap presente na index. */
+
+footer {
+    background: #0A0F14;
+    height: 136px;
+}
+
+.logo-footer {
+    width: 130px;
+}
+
+.text-detail {
+    font-size: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media img {
+    width: 1.50rem;
+    height: auto;
+    opacity: 0.8;
+}
+
+.social-media img:hover {
+    opacity: 1;
+}
+
+.nav-footer>li a {
+    color: #ffffff;
+}
+
+.nav-footer>li a:hover {
+    color: #b908f6;
+}
+
+/* Aqui termina a estilização do footer */
+
+
+
+
+
+/* AQUI TERMINA A ESTILIZAÇÃO DO FOOTER */

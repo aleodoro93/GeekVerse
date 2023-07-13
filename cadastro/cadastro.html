@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./cadastro.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="../img/logo-barra-navegador.png" alt="Caixinha branca com detalhes coloridos">
+  <title>Lista de Espera • GeekVerse</title>
+</head>
+
+<body>
+  <!-- Aqui começa o header -->
+  <header class="py-2">
+    <div class="px-2">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+          <img src="../img/logo-provisoria.png" alt="logo">
+        </a>
+
+        <div class="d-flex justify-content-center py-3 d-none d-lg-block">
+          <ul class="nav nav-pills nav-header">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
+            <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
+            <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </div>
+        <!-- AQUI COMEÇA O MENU HAMBURGER -->
+        <div class="dropdown d-sm-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="../img/menu-hamburguer.svg"
+              alt="caixa com três linhas que quando a tela for menor é assionado para ser responsivo">
+          </button>
+          <ul class="dropdown-menu d-xs-none">
+            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="../planos/planos.html">Planos</a></li>
+            <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
+          </ul>
+        </div>
+        <!-- AQUI TERMINA O MENU HAMBURGER -->
+      </div>
+  </header>
+  <!-- Aqui termina o header -->
+  <main class="position-relative">
+    <div class="overlay z-0"></div>
+    <!-- Aqui começa o conteúdo da página -->
+    <section class="py-5 container-wait-list position-relative">
+      <div
+        class="container-content d-flex flex-column position-relative text-white align-items-center justify-content-center py-3">
+        <div class="background-text">
+          <h3 class="text-center d-block z-1 fs-2 text-uppercase fw-bold">Faça seu cadastro na Lista de Espera
+          </h3>
+          <p class="text-center z-1 fs-5 text-white">Se cadastre em nossa lista de espera e seja avisado (a) quando as
+            boxes forem lançadas em primeira mãos.</p>
+        </div>
+
+        <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+
+          <form class="justify-content-center py-3 rounded form-style" action="" id="reg-form">
+            <fieldset class="d-flex flex-column align-items-center position-relative">
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="columns-form d-flex flex-wrap">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" required>
+
+                  <label for="rg">RG:</label>
+                  <input type="number" name="rg" id="rg" required>
+
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email" required>
+
+                  <label for="password">Senha:</label>
+                  <input type="password" name="password" id="password" required>
+                  <div id="Passwordvalidade"></div>
+
+                  <label for="confpassword">Confirme sua senha:</label>
+                  <input type="password" name="confpassword" id="confpassword" required>
+                  <div id="confirmPassword"></div>
+                </div>
+
+                <div class="columns-form" class="color-style-column2">
+                  <label for="zipcode">CEP:</label>
+                  <input type="text" maxlength="8" name="cep" id="zipcode" required>
+
+                  <label for="estate">Estado</label>
+                  <input type="text" name="estate" id="estate" required>
+
+                  <label for="city">Cidade:</label>
+                  <input type="text" name="city" id="city" required>
+
+                  <label for="district">Bairro:</label>
+                  <input type="text" name="district" id="district" required>
+
+                  <label for="street">Rua:</label>
+                  <input type="text" name="city" id="street" required>
+
+                  <label for="number">Número:</label>
+                  <input type="number" name="number" id="number" required>
+
+                  <label for="complement">Complemento:</label>
+                  <input type="text" name="complement" id="complement" required>
+                </div>
+              </div>
+              <button type="submit" id="btnRegister" class="button-register mb-3">Enviar</button>
+              <a class="text-forget-pw" href="../login/login.html">
+                Faça seu login
+              </a>
+            </fieldset>
+          </form>
+          <!-- TODO: ESSA TAG ESTAVA QUEBRADA SEM A TAG DE FECHAMENTO, EU FECHEI ELA APENAS POR SE TRATAR DE UM ELEMENTO COM ID -->
+          <div id="show-in-screen"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <div class="bi me-2" width="40" height="32">
+          <img class="logo-footer" src="../img/logo-provisoria.png">
+        </div>
+      </a>
+      <p class="text-white text-detail">Squad 8 © 2023</p>
+    </div>
+
+
+    <ul class="nav justify-content-center nav-footer gap-3">
+      <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+      <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
+      <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
+      <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
+    </ul>
+
+    <ul class="nav justify-content-end list-unstyled d-flex social-media">
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/instagram-logo.svg">
+          </div>
+        </a></li>
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/tiktok-logo.svg">
+          </div>
+        </a></li>
+      <li class="ms-3"><a href="#">
+          <div class="bi" width="24" height="24">
+            <img src="../img/whatsapp-logo.svg">
+          </div>
+        </a></li>
+    </ul>
+  </footer>
+  <script src="./cadastro.js"></script>
+</body>
+
+</html>
