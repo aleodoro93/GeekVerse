@@ -32,7 +32,7 @@ header {
 }
 
 .btn-home:hover {
-    background-color: #BAA0F2;
+    background-color: #b908f6;
     color: #000200;
 }
 
@@ -127,7 +127,7 @@ main {
 
 form {
     border-radius: 20px;
-    border: 2px solid rgb(81, 217, 61);
+    border: 2px solid rgb(2, 176, 220);
     background: rgba(123, 123, 123, 0.396);
     -webkit-backdrop-filter: blur(13px);
     backdrop-filter: blur(13px);
@@ -135,7 +135,7 @@ form {
 }
 
 label {
-    color: #51D93D;
+    color: #02B0DC;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.9;
@@ -152,7 +152,7 @@ input {
 }
 
 input:focus {
-    background: #BAA0F2;
+    background: #F2C9F2;
 }
 
 fieldset {
@@ -166,7 +166,7 @@ fieldset {
 }
 
 .text-forget-pw {
-    color: #BAA0F2;
+    color: #b908f6;
 }
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DO BOTÃO ENVIAR */
@@ -188,7 +188,7 @@ fieldset {
 
 .button-register:hover {
     color: #000200;
-    background-color: #BAA0F2;
+    background-color: #b908f6;
     transition: 1s;
     transform: scale(1.6);
 }

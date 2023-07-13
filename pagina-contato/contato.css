@@ -110,7 +110,7 @@ main {
   height: 100%;
 
   backface-visibility: hidden;
-  background: #7564E5;
+  background: #b908f6;
   border-radius: 20px;
 }
 
@@ -127,7 +127,7 @@ main {
   height: 100%;
 
   backface-visibility: hidden;
-  background: #3FA1C1;
+  background: #02B0DC;
   color: black;
   transform: rotateY(180deg);
   border-radius: 20px;
@@ -146,7 +146,7 @@ main {
 
 .icons {
   width: 30px;
-  background-color: #3FA1C1;
+  background-color: #02B0DC;
   border-radius: 20px;
   margin: 20px 10px;
 
