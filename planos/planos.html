@@ -2,206 +2,200 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./planos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <!-- Adicionar icon em todas as páginas -->
-    <link rel="icon" type="image/png" href="./imagens/logo-barra-navegador.png"
-        alt="Caixinha branca com detalhes coloridos">
-    <title>Planos e Detalhes</title>
+  <link rel="stylesheet" type="text/css" href="./planos.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="../img/logo-barra-navegador.png" alt="Caixinha branca com detalhes coloridos">
+  <title>Planos e Detalhes • GeekVerse</title>
 </head>
 
 <body>
-    <header>
-        <header class="py-2">
-            <div class="px-2">
-              <div class="d-flex flex-wrap align-items-center justify-content-between">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                  <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
-                  <img src="../img/logo-provisoria.png" alt="logo">
-                </a>
-        
-                <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
-                  <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
-                    <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
-                    <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
-                  </ul>
-                </div>
-        
-                <div class="dropdown d-sm-none">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="../img/menu-hamburguer.svg">
-                  </button>
-                  <ul class="dropdown-menu d-xs-none">
-                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                    <li><a class="dropdown-item" href="../planos/planos.html">Planos de Detalhes</a></li>
-                    <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
-                    <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
-                  </ul>
-                </div>
-        
-                <div class="dropdown text-end">
-                  <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="true">
-                  </a>
-                </ul>
-                </div>
+  <!-- Aqui começa o header -->
+  <header class="py-2">
+    <div class="px-2">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+          <img src="./imagens/logo-provisoria.png" alt="logo">
+        </a>
+
+        <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
+            <li class="nav-item"><a href="./planos.html" class="nav-link">Planos</a></li>
+            <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown d-sm-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="./imagens/menu-hamburguer.svg">
+          </button>
+          <ul class="dropdown-menu d-xs-none">
+            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+            <li><a class="dropdown-item" href="./planos.html">Planos</a></li>
+            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Aqui termina o header -->
+
+  <main class="position-relative">
+    <div class="overlay z-0"></div>
+
+    <!-- Aqui começa o conteúdo da página -->
+    <section class="py-5 container-plans-details position-relative mt-5">
+      <div
+        class="container-content d-flex flex-column position-relative text-white align-items-center justify-content-center">
+        <h3 class="text-center d-block z-1 fs-2 text-uppercase fw-bold">Planos e Detalhes</h3>
+        <p class="text-center z-1 fs-5"> Conheça todas as informações sobre as boxes que chegarão
+          mensalmente direto na sua casa.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <!-- <div class="content-plans-details">
+
+                    </div> -->
+          <div class="card-planos">
+            <div class="image-container">
+              <img src="./imagens/box-platina.png" alt="Caixa de prateada com itens dentro">
+            </div>
+            <span class="fw-bold">PLATINA</span>
+            <span class="valor fw-bold fs-1">R$ 49,90</span>
+            <ul>
+              <p class="month-p">Receba Mensal</p>
+              <li>Caixa com 3 itens geek surpresas cuidadosamente selecionados.</li>
+              <li>HQ's, Camisetas, Bonecos, entre outros...</li>
+            </ul>
+            <img class="icon-1" src="./imagens/platina.png" alt="Insignia prateada">
+          </div>
+          <div class="card-planos">
+
+            <div class="image-container">
+              <img src="./imagens/box-diamante.png" alt="Caixa diamante com itens dentro">
+            </div>
+            <span class="fw-bold">DIAMANTE</span>
+            <span class="valor fw-bold fs-1">R$ 79,90</span>
+            <ul>
+              <p class="month-p">Receba Mensal</p>
+              <li>Caixa com 5 itens geek surpresas cuidadosamente selecionados.</li>
+              <li>Brindes extras em cada caixa.</li>
+            </ul>
+            <img class="icon-2" src="./imagens/diamond.png" alt="Insignia Diamante">
+          </div>
+        </div>
+        <div class="lista">
+          <p class="cta-button"><a>Clique aqui e entre em contato para mais informações sobre a GeekVerse.</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- aqui começa a seção detalhes -->
+    <section class="py-5 section-contact position-relative mt-5">
+      <div
+        class="container-content d-flex flex-column position-relative text-white align-items-center justify-content-center py-5">
+        <h3 class="text-center d-block z-1 fs-2 text-white">O que vem na box</h3>
+        <p class="text-center z-1 fs-5 subtitulo"> Com o GeekVerseBox, os assinantes mergulham no universo geek
+          a cada caixa recebida, vivenciando uma experiência emocionante e única.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <div class="content-plans-details">
+            <div class="itens">
+              <div class="card-itens">
+                <img src="./imagens/hqs-2.png" alt="Várias revistas de mangá">
+                <Ol>
+                  <li>HQ's</li>
+                  <li>Mangás</li>
+                  <li>Quadrinhos</li>
+                </Ol>
               </div>
             </div>
-          </header>
-    </header>
-    <main>
-        <h1>Planos e Detalhes</h1>
-        <h2>CONHEÇA NOSSAS BOXES</h2>
-        <section class="planos">
+          </div>
+          <div class="itens">
+            <div class="card-itens">
+              <img src="./imagens/camisetas-4.png"
+                alt="Uma menina loira e outra morena, vestindo camisetas de personagens">
+              <Ol>
+                <li>Camisetas</li>
+                <li>Bandanas</li>
+                <li>Bags</li>
+              </Ol>
+            </div>
+          </div>
+          <div class="itens">
+            <div class="card-itens">
+              <img src="./imagens/funko-1.png" alt="Boneco de plástico pequeno, estilo capitão américa">
+              <Ol>
+                <li>Funko</li>
+                <li>Amigurumi</li>
+                <li>Luminária Pixel</li>
+              </Ol>
+            </div>
+          </div>
+          <div class="itens">
+            <div class="card-itens">
+              <img src="./imagens/canecas-1.png" alt="Caneca com detalhes azul - estilo star wars">
+              <Ol>
+                <li>Caneca</li>
+                <li>Copo</li>
+                <li>Squeeze</li>
+              </Ol>
+            </div>
+          </div>
+          <div class="itens">
+            <div class="card-itens">
+              <img src="./imagens/porta-copos-1.png" alt="Porta copos de personagens de anime">
+              <Ol>
+                <li>Porta copos</li>
+                <li>Adesivos</li>
+                <li>Chaveiros</li>
+              </Ol>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="card-planos">
-                <div class="image-container">
-                    <img src="../img/box-platina.png" alt="Caixa de prateada com itens dentro">
-                </div>
-                <span>PLATINA</span>
-                <span class="valor">49,90R$</span>
-                <ul>
-                    <p>Receba Mensal</p>
-                    <li>Caixa com 3 itens geek surpresas cuidadosamente selecionados. </li>
-                    <li>HQ's</li>
-                    <li>Livros</li>
-                    <li>Funkos</li>
-                    <li>Outros produtos geek.</li>
-                </ul>
-                <img class="icon-1" src="../img/platina.png" alt="Insignia prateada">
-            </div>
-            </div>
-
-            <div class="card-planos">
-                <div class="image-container">
-                    <img src="../img/box-diamante.png" alt="Caixa diamante com itens dentro">
-                </div>
-                <span>DIAMANTE</span>
-                <span class="valor">79,90R$</span>
-                <ul>
-                    <p>Receba Mensal</p>
-                    <li>Caixa com 5 itens geek surpresas cuidadosamente selecionados.</li>
-                    <li>Brindes extras em cada caixa.</li>
-                    <li>Participação em sorteios com a chance de ganhar prêmios incríveis.</li>
-                </ul>
-                <img class="icon-2" src="../img/diamond.png" alt="Insignia Diamante">
-            </div>
-        </section>
-        <header>
-            <a href="../pagina-contato/contato.html"><pclass="cta-text">Clique aqui em caso de dúvidas</p></a>
-            <h3>O QUE VEM NA BOX</h3>
-            <p>Com o GeekVerseBox, os assinantes mergulham no universo geek a cada caixa recebida,
-                vivenciando uma experiência emocionante e única.
-            </p>
-        </header>
-        <section class="planos">
-            <div class="itens">
-                <div class="card-itens">
-                    <img src="../img/hqs-2.png" alt="Várias revistas de mangá">
-                    <Ol>
-                        <li>HQ's</li>
-                        <li>Mangás</li>
-                        <li>Quadrinhos</li>
-                    </Ol>
-                </div>
-            </div>
-            </div>
-            <div class="itens">
-                <div class="card-itens">
-                    <img src="../img/camisetas-4.png"
-                        alt="Uma menina loira e outra morena, vestindo camisetas de personagens">
-                    <Ol>
-                        <li>Camisetas</li>
-                        <li>Bandanas</li>
-                        <li>Bags</li>
-                    </Ol>
-                </div>
-            </div>
-            <div class="itens">
-                <div class="card-itens">
-                    <img src="../img/funko-1.png" alt="Boneco de plástico pequeno, estilo capitão américa">
-                    <Ol>
-                        <li>Funko</li>
-                        <li>Amigurumi</li>
-                        <li>Luminária Pixel</li>
-                    </Ol>
-                </div>
-            </div>
-            <div class="itens">
-                <div class="card-itens">
-                    <img src="../img/canecas-1.png" alt="Caneca com detalhes azul - estilo star wars">
-                    <Ol>
-                        <li>Caneca</li>
-                        <li>Copo</li>
-                        <li>Squeeze</li>
-                    </Ol>
-                </div>
-            </div>
-            <div class="itens">
-                <div class="card-itens">
-                    <img src="../img/porta-copos-1.png" alt="Porta copos de personagens de anime">
-                    <Ol>
-                        <li>Porta copos</li>
-                        <li>Adesivos</li>
-                        <li>Chaveiros</li>
-                    </Ol>
-                </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <div class="bi me-2" width="40" height="32">
-                  <img class="logo-footer" src="../img/logo-provisoria.png">
-                </div>
-              </a>
-              <p class="text-white text-detail">Squad 8 © 2023</p>
-            </div>
-        
-        
-            <ul class="nav justify-content-center nav-footer gap-3">
-              <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
-              <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
-              <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
-              <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
-            </ul>
-        
-            <ul class="nav justify-content-end list-unstyled d-flex social-media">
-              <li class="ms-3"><a href="#">
-                  <div class="bi" width="24" height="24">
-                    <img src="../img/instagram-logo.svg">
-                  </div>
-                </a></li>
-              <li class="ms-3"><a href="#">
-                  <div class="bi" width="24" height="24">
-                    <img src="../img/tiktok-logo.svg">
-                  </div>
-                </a></li>
-              <li class="ms-3"><a href="#">
-                  <div class="bi" width="24" height="24">
-                    <img src="../img/whatsapp-logo.svg">
-                  </div>
-                </a></li>
-            </ul>
-          </footer>
-    </footer>
+    </section>
+  </main>
+  <!-- Aqui começa o footer da página -->
+  <footer class="py-5 d-flex flex-column justify-content-between align-items-center">
+    <img src="./imagens/logo-provisoria.png" alt="logo">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Planos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Lista de Espera</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="./imagens/instagram-logo.svg" alt="Logo do Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/pt-BR/" target="_blank">
+        <img src="./imagens/tiktok-logo.svg" alt="Logo do TikTok" />
+      </a>
+      <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
+        <img src="./imagens/whatsapp-logo.svg" alt="Logo do WhatsApp" />
+      </a>
+    </div>
+    <p class="text-center text-white mb-0">© 2023 Squad 8, Resilia</p>
+  </footer>
+  <!-- Aqui termina o footer da página -->
 </body>
 
 </html>

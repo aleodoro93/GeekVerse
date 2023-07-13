@@ -7,8 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Inter:wght 200;300;400;500;600;700;800;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="./cadastro.css" />
@@ -19,7 +18,8 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
 
-  <title>Lista de Espera</title>
+  <link rel="icon" type="image/png" href="../img/logo-barra-navegador.png" alt="Caixinha branca com detalhes coloridos">
+  <title>Lista de Espera • GeekVerse</title>
 </head>
 
 <body>
@@ -33,10 +33,10 @@
         </a>
 
         <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
-          <ul class="nav nav-pills">
+          <ul class="nav nav-pills nav-header">
             <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
             <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
-            <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
             <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
           </ul>
         </div>
@@ -48,9 +48,9 @@
           </button>
           <ul class="dropdown-menu d-xs-none">
             <li><a class="dropdown-item" href="../index.html">Home</a></li>
-            <li><a class="dropdown-item" href="../planos/planos.html">Planos de Detalhes</a></li>
-            <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
-            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
+            <li><a class="dropdown-item active" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+            <li><a class="dropdown-item" href="../planos/planos.html">Planos</a></li>
+            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contato</a></li>
           </ul>
         </div>
 
@@ -58,7 +58,10 @@
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="true">
           </a>
-        </ul>
+          </ul>
+        </div>
+        <div class="text-end">
+          <a href="../login/login.html"><button type="button" class="btn-home btn-login me-2">Entrar</button></a>
         </div>
       </div>
     </div>
@@ -70,8 +73,9 @@
     <section class="py-5 container-wait-list position-relative">
       <div
         class="container-content d-flex flex-column position-relative text-white align-items-center justify-content-center py-5">
-        <h3 class="text-center d-block z-1 fs-2">Faça seu cadastro na Lista de Espera</h3>
-        <p class="text-center z-1 fs-5 subtitulo">Se cadastre em nossa lista de espera e seja avisado (a) quando as
+        <h3 class="text-center d-block z-1 fs-2 text-uppercase font-weight-bold">Faça seu cadastro na Lista de Espera
+        </h3>
+        <p class="text-center z-1 fs-5 text-white">Se cadastre em nossa lista de espera e seja avisado (a) quando as
           boxes forem lançadas em primeira mãos.</p>
 
         <div class="d-flex gap-3 justify-content-center flex-wrap">
@@ -123,10 +127,9 @@
               <button type="submit" id="btnRegister" class="button-register mb-3">Enviar</button>
             </fieldset>
           </form>
-          <div id="show-in-screen"
+          <div id="show-in-screen" </div>
+          </div>
         </div>
-      </div>
-      </div>
       </div>
     </section>
   </main>
@@ -143,8 +146,8 @@
 
     <ul class="nav justify-content-center nav-footer gap-3">
       <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
-      <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
       <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
+      <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Planos</a></li>
       <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
     </ul>
 
@@ -168,4 +171,5 @@
   </footer>
   <script src="./cadastro.js"></script>
 </body>
+
 </html>

@@ -2,99 +2,102 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Inter:wght 200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="./login.css" />
+  <link rel="stylesheet" type="text/css" href="./login.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
-    <title>Entrar • GeekVerse</title>
+  <link rel="icon" type="image/png" href="../img/logo-barra-navegador.png" alt="Caixinha branca com detalhes coloridos">
+  <title>Entrar • GeekVerse</title>
 </head>
 
 <body>
-    <!-- Aqui começa o header -->
-    <header class="py-2">
-        <div class="px-2">
-          <div class="d-flex flex-wrap align-items-center justify-content-between">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
-              <img src="../img/logo-provisoria.png" alt="logo">
-            </a>
-    
-            <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../planos/planos.html" class="nav-link">Planos</a></li>
-                <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
-                <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
-              </ul>
-            </div>
-    
-            <div class="dropdown d-sm-none">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img src="../img/menu-hamburguer.svg">
-              </button>
-              <ul class="dropdown-menu d-xs-none">
-                <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                <li><a class="dropdown-item" href="../planos/planos.html">Planos de Detalhes</a></li>
-                <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
-                <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
-              </ul>
-            </div>
-    
-            <div class="dropdown text-end">
-              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="true">
-              </a>
-            </ul>
-            </div>
-          </div>
+  <!-- Aqui começa o header -->
+  <header class="py-2">
+    <div class="px-2">
+      <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
+          <img src="../img/logo-provisoria.png" alt="logo">
+        </a>
+
+        <div class="d-flex justify-content-center py-3 d-none d-lg-block ">
+          <ul class="nav nav-pills nav-header">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link">Lista de Espera</a></li>
+            <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link">Contato</a></li>
+          </ul>
         </div>
-      </header>
-    <!-- Aqui termina o header -->
-    <main class="position-relative">
-        <div class="overlay z-0"></div>
-        <!-- Aqui começa o conteúdo da página -->
-        <section class="py-5 container-form position-relative container-content">
-            <div
-                class=" d-flex flex-column position-relative text-white align-items-center justify-content-center py-5">
-                <h3 class="text-center d-block z-1 fs-2">Faça seu login</h3>
-                <p class="text-center z-1 fs-5 subtitulo">Para acessar o conteúdo do GeekVerse, utilize seu login e
-                    senha cadastrados.</p>
-                <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <form class="justify-content-center py-3 rounded form-style" action="" id="formulario">
-                        <fieldset class="d-flex flex-column align-items-center position-relative">
-                            <div class="d-flex flex-wrap justify-content-center">
-                                <div class="columns-form d-flex flex-wrap">
 
-                                    <label for="email">E-mail:</label>
-                                    <input type="text" id="email" required>
+        <div class="dropdown d-sm-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="../img/menu-hamburguer.svg">
+          </button>
+          <ul class="dropdown-menu d-xs-none">
+            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="../cadastro/cadastro.html">Lista de Espera</a></li>
+            <li><a class="dropdown-item" href="../pagina-contato/contato.html">Contatos</a></li>
+          </ul>
+        </div>
 
-                                    <label for="senha">Senha:</label>
-                                    <input type="password" id="senha" required>
+        <!-- <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="true">
+          </a>
+          </ul>
+        </div> -->
+        <div class="text-end">
+          <a href="../cadastro/cadastro.html"><button type="button" class="btn-home btn-lista-espera">Cadastro na Lista
+              de Espera
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Aqui termina o header -->
+  <main class="position-relative">
+    <div class="overlay z-0"></div>
+    <!-- Aqui começa o conteúdo da página -->
+    <section class="py-5 container-form position-relative container-content">
+      <div class=" d-flex flex-column position-relative text-white align-items-center justify-content-center py-5">
+        <h3 class="text-center d-block z-1 fs-2 text-uppercase font-weight-bold">Faça seu login</h3>
+        <p class="text-center z-1 fs-5 subtitulo">Para acessar o conteúdo do GeekVerse, utilize seu login e
+          senha cadastrados.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <form class="justify-content-center py-3 rounded form-style" action="" id="formulario">
+            <fieldset class="d-flex flex-column align-items-center position-relative">
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="columns-form d-flex flex-wrap">
 
-                                    <button type="submit" class="button-register">Entrar</button>
-                                    <div class="text-center"><a href="../login-recuperacao/log-recp.html">Esqueceu sua
-                                            senha?</a></div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    
+                  <label for="email">E-mail:</label>
+                  <input type="text" id="email" required>
+
+                  <label for="senha">Senha:</label>
+                  <input type="password" id="senha" required>
+
+                  <button type="submit" class="button-register">Entrar</button>
+                  <div class="text-center"><a class="text-forget-pw" href="../login-recuperacao/log-recp.html">Esqueceu
+                      sua
+                      senha?</a></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
     <div class="d-flex flex-column justify-content-center align-items-center">
       <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
@@ -108,7 +111,6 @@
 
     <ul class="nav justify-content-center nav-footer gap-3">
       <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
-      <li class="nav-item"><a href="../planos/planos.html" class="nav-link px-2">Planos</a></li>
       <li class="nav-item"><a href="../cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
       <li class="nav-item"><a href="../pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
     </ul>
@@ -132,7 +134,7 @@
     </ul>
   </footer>
 
-    <script src="login.js"></script>
+  <script src="login.js"></script>
 </body>
 
 </html>

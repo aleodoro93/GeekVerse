@@ -5,8 +5,8 @@
     border: 0;
     box-sizing: border-box;
 
+    /* Adiciona fonte*/
     font-family: 'Exo 2', sans-serif;
-    /* font-family: 'Inter', sans-serif; */
 }
 
 /* AQUI COMEÇA A ESTILIZAÇÃO DO HEADER */
@@ -19,6 +19,46 @@ header {
     top: 0;
     width: 100%;
     height: 80px;
+}
+
+.btn-home {
+    border-radius: 24px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    transition: all 0.2s;
+}
+
+.btn-home:hover {
+    background-color: #BAA0F2;
+    color: #000200;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #BAA0F2;
+}
+
+.btn-lista-espera {
+    background-color: #51D93D;
+    color: #000200;
+    border: 2px solid transparent;
+}
+
+.nav-header {
+    margin-left: 119px;
+
+}
+
+.nav-header>li a {
+    color: #ffffff;
+}
+
+.nav-header>li a:hover {
+    color: #b908f6;
 }
 
 /* AQUI TERMINA A ESTILIZAÇÃO DO HEADER */
@@ -34,6 +74,20 @@ body {
 /* AQUI COMEÇA A ESTILIZAÇÃO DA MAIN */
 main {
     background-image: url("../img/background-texto-explicacao-provisorio.jpg");
+    min-height: 72vh;
+    animation: backgroundmove 35s infinite alternate;
+}
+
+@keyframes backgroundmove {
+    0% {
+        background-position-x: 0%;
+
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
 }
 
 /* AQUI TERMINA A ESTILIZAÇÃO DA MAIN */
@@ -80,7 +134,7 @@ main {
 form {
     border-radius: 20px;
     border: 2px solid rgb(81, 217, 61);
-    background: #000200;
+    background: rgba(123, 123, 123, 0.396);
     -webkit-backdrop-filter: blur(13px);
     backdrop-filter: blur(13px);
     box-shadow: -1.5px 1.5px 3px 5px #050505c4;
@@ -147,37 +201,37 @@ fieldset {
 footer {
     background: #020202;
     height: 136px;
-  }
-  
-  .logo-footer {
+}
+
+.logo-footer {
     width: 130px;
-  }
-  
-  .text-detail {
+}
+
+.text-detail {
     font-size: 15px;
-  }
-  
-  .social-media {
+}
+
+.social-media {
     display: flex;
     gap: 1rem;
-  }
-  
-  .social-media img {
+}
+
+.social-media img {
     width: 1.50rem;
     height: auto;
     opacity: 0.8;
-  }
-  
-  .social-media img:hover {
+}
+
+.social-media img:hover {
     opacity: 1;
-  }
-  
-  .nav-footer>li a {
+}
+
+.nav-footer>li a {
     color: #ffffff;
-  }
-  
-  .nav-footer>li a:hover {
+}
+
+.nav-footer>li a:hover {
     color: #b908f6;
-  }
+}
 
 /* AQUI TERMINA A ESTILIZAÇÃO DO FOOTER */

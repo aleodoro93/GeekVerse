@@ -7,7 +7,6 @@
 
   /* Adiciona fonte*/
   font-family: 'Exo 2', sans-serif;
-  /* font-family: 'Inter', sans-serif; */
 }
 
 /* Linear Background para todas as páginas */
@@ -240,8 +239,16 @@ footer {
   color: #ffffff;
 }
 
+.nav-footer>li a.active {
+  color: #51D93D;
+}
+
 .nav-footer>li a:hover {
   color: #b908f6;
 }
+
+/* .active {
+  color: #;
+} */
 
 /* Aqui termina a estilização do footer */
