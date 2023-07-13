@@ -29,7 +29,7 @@ header {
 }
 
 .nav-header>li a:hover {
-    color: #BAA0F2;
+    color: #b908f6;
 }
 
 body {
@@ -202,7 +202,7 @@ footer {
 }
 
 .month-p {
-    color: #BAA0F2;
+    color: #b908f6;
     font-size: 26px;
     margin-right: 25px;
     text-align: center;
@@ -241,7 +241,7 @@ span.valor {
 }
 
 .text-contact:hover {
-    background-color: #BAA0F2;
+    background-color: #b908f6;
     color: #ffffff;
 }
 
@@ -321,7 +321,7 @@ span.valor {
 }
 
 h2 {
-    color: #BAA0F2;
+    color: #b908f6;
 }
 
 .card-planos span {
@@ -361,7 +361,7 @@ ul li::marker {
 }
 
 ul li {
-    color: #BAA0F2;
+    color: #b908f6;
     font-size: 18px;
 }
 
@@ -398,7 +398,7 @@ ul li {
 }
 
 .nav-header>li a:hover {
-    color: #BAA0F2;
+    color: #b908f6;
 }
 
 .nav-footer>li a {
@@ -406,5 +406,5 @@ ul li {
 }
 
 .nav-footer>li a:hover {
-    color: #BAA0F2;
+    color: #b908f6;
 }

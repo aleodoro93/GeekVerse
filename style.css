@@ -234,6 +234,10 @@ footer {
   font-size: 15px;
 }
 
+.text-valor {
+  color: #51D93D;
+}
+
 .social-media {
   display: flex;
   gap: 1rem;
