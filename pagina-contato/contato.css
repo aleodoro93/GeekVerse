@@ -127,6 +127,10 @@ main {
   border-radius: 20px;
 }
 
+.text-title {
+  color: #51D93D;
+}
+
 .title-name {
 
   font-size: 21px;
