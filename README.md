@@ -4,7 +4,7 @@
 
 Projeto em grupo intitulado “GeekVerse | The Frontenders" desenvolvido ao final do "Módulo 2 - Orientação a Objetos e Inteligência Emocional" do curso de formação WebDev Full Stack JavaScript da Resilia Educação em parceria com o programa Códigos do Amanhã da EBANX.
 
-Link para o site "GeekVerse": <a href="https://aleodoro93.github.io/GeekVerse"</a>
+Link para o site "GeekVerse": <ahttps://aleodoro93.github.io/GeekVerse"</a>
 
 ## Descrição:
 O Geekverse é um negócio criado para os entusiastas da cultura pop e os apaixonados por tecnologia. Construído como parte do curso "Códigos do Amanhã" oferecido pela Resilia Educação, o Geekverse é um modelo de negócio inovador que oferece uma experiência única por meio de caixas surpresa mensais contendo itens cuidadosamente selecionados.
