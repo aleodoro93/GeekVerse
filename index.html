@@ -23,18 +23,20 @@
 </head>
 
 <body>
-  <!-- Aqui começa o header da página -->
-  <header class="py-2">
+
+  <!-- AQUI COMEÇA O "HEADER" DA PÁGINA -->
+  <header class="position-fixed py-2">
     <div class="px-2">
       <div class="d-flex flex-wrap align-items-center justify-content-between">
         <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <!-- TODO: ALTERAR LOGO PROVISÓRIA PARA LOGO FINAL -->
           <img src="./img/logo-provisoria.png" alt="logo">
         </a>
         <!-- AQUI COMEÇA OS BOTÕES ENTRAR E CADASTRO NA LISTA DE ESPERA -->
-        <div class="text-end text-end d-none d-lg-block">
-          <a href="./login/login.html"><button type="button" class="btn-home btn-login me-2">Entrar</button></a>
-          <a href="./cadastro/cadastro.html"><button type="button" class="btn-home btn-lista-espera">Cadastro na Lista
+        <div class="text-end d-none d-lg-block">
+          <a href="./login/login.html"><button type="button"
+              class="btn-home btn-login me-2 text-uppercase fw-bold">Entrar</button></a>
+          <a href="./cadastro/cadastro.html"><button type="button"
+              class="btn-home btn-lista-espera text-uppercase fw-bold">Cadastro na Lista
               de Espera
             </button></a>
         </div>
@@ -55,10 +57,12 @@
       </div>
     </div>
   </header>
-  <!-- Aqui termina o header da página -->
-  <!-- Aqui começa a main da página -->
+  <!-- AQUI TERMINA O "HEADER" DA PÁGINA -->
+
+  <!-- AQUI COMEÇA A "MAIN" DA PÁGINA -->
   <main>
-    <!-- Aqui começa a seção de carrossel de imagens da página -->
+
+    <!-- AQUI COMEÇA A "SECTION CAROUSEL" DE IMAGENS DA PÁGINA -->
     <section id="carouselHome" class="carousel slide carousel-home">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-label="Slide 1"
@@ -68,26 +72,24 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item item-1 active">
-          <!-- TODO: ALTERAR ALT DAS IMAGENS -->
-          <!-- <img src="images/carrossel-imagem-provisoria-1.png" alt="imagem provisória 1"> -->
-          <div class="overlay"></div>
+          <div class="overlay position-absolute"></div>
           <div class="carousel-caption d-none d-md-block">
             <h2>GeekVerse para você</h2>
-            <p>Todo mês o universo Geek chega direto na sua casa.</p>
+            <p class="fs-5">Todo mês o universo Geek chega direto na sua casa.</p>
           </div>
         </div>
         <div class="carousel-item item-2">
-          <div class="overlay"></div>
+          <div class="overlay position-absolute"></div>
           <div class="carousel-caption d-none d-md-block">
             <h2>GeekVerse está com preço promocional</h2>
-            <p>Entre na lista de espera e assine o GeekVerse com 25% de desconto.</p>
+            <p class="fs-5">Entre na lista de espera e assine o GeekVerse com desconto.</p>
           </div>
         </div>
         <div class="carousel-item item-3">
-          <div class="overlay"></div>
+          <div class="overlay position-absolute"></div>
           <div class="carousel-caption d-none d-md-block">
             <h2>GeekVerse é cheia de mimos</h2>
-            <p>Tem HQ, camisetas, bonecos, porta-corpos. Tem de tudo e mais um pouco na sua box.</p>
+            <p class="fs-5">Tem HQ, camisetas, bonecos, porta-corpos. Tem de tudo na sua box.</p>
           </div>
         </div>
       </div>
@@ -100,63 +102,73 @@
         <span class="visually-hidden">Próximo</span>
       </button>
     </section>
-    <!-- Aqui termina a seção de carrossel de imagens da página -->
-    <!-- Aqui começa a seção de explicação da página -->
-    <!-- TODO: SE DER CRIAR UMA CLASSE CONTAINER NA SECTION PARA ALINHAR COM A DIV DE PLANS E O TEXTO DE EXPLICAÇÃO. COLOCAR TAMANHO DO CONTAINER IGUAL EM TODOS -->
+    <!-- AQUI TERMINA A "SECTION CAROUSEL" DE IMAGENS DA PÁGINA -->
+
+    <!-- AQUI COMEÇA A "SECTION INFORMATION" DA PÁGINA -->
     <section class="py-5 section-infos position-relative">
       <div class="overlay-infos z-0"></div>
       <div
-        class="container-content d-flex flex-column position-relative text-white align-items-center justify-content-center">
-        <h3 class="text-center d-block z-1 fs-2 fw-bold">Saiba mais informações sobre a
-          GeekVerse</h3>
+        class="container-infos d-flex flex-column position-relative text-white align-items-center justify-content-center">
+        <h3 class="text-center d-block z-1 fs-2 fw-bold">Saiba mais informações sobre a GeekVerse</h3>
         <p class="text-center z-1 fs-5">Uma box perfeita para quem ama o mundo geek e quer ficar por dentro de todas as
           novidades relacionadas a esse maravilhoso universo.</p>
-        <div class="d-flex flex-column justify-content-center align-items-center pt-5 z-1 infos-boxes w-100">
-          <p class="text-uppercase mb-9">Por que a GeekVerse é tão especial?</p>
+        <div class="d-flex flex-column justify-content-center align-items-center pt-5 z-1 w-100 infos-boxes">
+          <h4 class="text-uppercase mb-9 fw-bold fs-5">Por que a GeekVerse é tão especial?</h4>
           <ul class="d-flex flex-wrap p-0 w-100 text-center">
-            <li class="col-sm-12 col-md-4">Literatura diferente todo mês.</li>
-            <li class="col-sm-12 col-md-4">Itens colecionáveis para fãs.</li>
-            <li class="col-sm-12 col-md-4">Preço que cabe no seu bolso.</li>
+            <li class="col-sm-12 col-md-4 fs-6">Nova literatura todo mês.</li>
+            <li class="col-sm-12 col-md-4 fs-6">Itens colecionáveis para fãs.</li>
+            <li class="col-sm-12 col-md-4 fs-6">Preço que cabe no seu bolso.</li>
           </ul>
-          <div class="d-flex justify-content-between py-3 align-items-center flex-wrap section-plans w-100 row gap-5">
-            <div class="box-plan col-sm col-xs-12 no-active blur-card-home">
-              <h4 class="text-white fw-bold fs-3">PLATINA</h4>
+          <div class="d-flex justify-content-between py-3 align-items-center flex-wrap w-100 row gap-5">
+            <div
+              class="box-plan d-flex flex-column justify-content-between align-items-center col-sm col-xs-12 no-active blur-card-home">
+              <h5 class="text-white fw-bold fs-3">PLATINA</h5>
               <p class="text-valor fw-bold fs-1">R$ 49,90</p>
               <p class="text-white fw-bold fs-5">3 itens</p>
             </div>
-            <div class="box-plan box-plan col-sm col-xs-12 active blur-card-home">
-              <span class="text-white text-uppercase">Melhor Plano</span>
-              <h4 class="text-white fw-bold fs-3">DIAMANTE</h4>
+            <div
+              class="box-plan d-flex flex-column justify-content-between align-items-center col-sm col-xs-12 active blur-card-home">
+              <span class="text-white text-uppercase fw-bold position-absolute">Melhor Plano</span>
+              <h5 class="text-white fw-bold fs-3">DIAMANTE</h5>
               <p class="text-valor fw-bold fs-1">R$ 79,90</p>
               <p class="text-white fw-bold fs-5">5 itens + Brinde</p>
             </div>
           </div>
-          <a href="./cadastro/cadastro.html"><button type="button" class="btn-home btn-lista-espera z-1 py-3 mt-4">Entre
+          <a href="./cadastro/cadastro.html"><button type="button"
+              class="btn-home btn-lista-espera z-1 py-3 mt-4 fs-5 text-uppercase fw-bold">Entre
               na lista de Espera</button></a>
         </div>
       </div>
     </section>
-
+    <!-- AQUI TERMINA A "SECTION INFORMATION" DA PÁGINA -->
   </main>
+  <!-- AQUI TERMINA A "MAIN" DA PÁGINA -->
 
+  <!-- AQUI COMEÇA O "FOOTER" DA PÁGINA -->
   <footer class="d-flex flex-wrap justify-content-between align-items-center p-3">
+
+    <!-- AQUI ESTÁ A LOGO DO "FOOTER" -->
     <div class="d-flex flex-column justify-content-center align-items-center">
       <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
         <div class="bi me-2" width="40" height="32">
           <img class="logo-footer" src="./img/logo-provisoria.png">
         </div>
       </a>
-      <p class="text-white text-detail">Squad 8 © 2023</p>
+      <p class="text-white text-detail fs-6">Squad 8 © 2023</p>
     </div>
+    <!-- AQUI ESTÁ A LOGO DO "FOOTER" -->
 
+    <!-- AQUI COMEÇA OS LINKS DE NAVEGAÇÃO DO "FOOTER" -->
     <ul class="nav justify-content-center nav-footer gap-3">
       <li class="nav-item"><a href="./index.html" class="nav-link px-2 active">Home</a></li>
       <li class="nav-item"><a href="./cadastro/cadastro.html" class="nav-link px-2">Lista de Espera</a></li>
       <li class="nav-item"><a href="./planos/planos.html" class="nav-link px-2">Planos</a></li>
       <li class="nav-item"><a href="./pagina-contato/contato.html" class="nav-link px-2">Contato</a></li>
     </ul>
+    <!-- AQUI TERMINA OS LINKS DE NAVEGAÇÃO DO "FOOTER" -->
 
-    <ul class="nav justify-content-end list-unstyled d-flex social-media">
+    <!-- AQUI COMEÇA OS ICONS DE REDES SOCIAIS DO "FOOTER" -->
+    <ul class="social-media d-flex nav justify-content-end list-unstyled gap-3">
       <li class="ms-3"><a href="#">
           <div class="bi" width="24" height="24">
             <img src="./img/instagram-logo.svg">
@@ -173,7 +185,10 @@
           </div>
         </a></li>
     </ul>
+    <!-- AQUI TERMINA OS ICONS DE REDES SOCIAIS DO "FOOTER" -->
+
   </footer>
+  <!-- AQUI TERMINA O "FOOTER" DA PÁGINA -->
 </body>
 
 </html>
