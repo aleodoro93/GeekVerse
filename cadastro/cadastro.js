@@ -2,7 +2,7 @@ const alertPassword = document.getElementById("Passwordvalidade");
 const alertConfPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
 const confPassInpt = document.getElementById("confpassword");
-let customers = [];
+let costummers = [];
 
 const storedCustomers = localStorage.getItem("clientes");
 if (storedCustomers) {
@@ -95,13 +95,13 @@ form.addEventListener("submit", function (event) {
     return;
   }
  /* o emerson esteve aqui */
-  const matchEmail = customers.find((customer) => customer.email === email);
+  const matchEmail = costummers.find((customer) => customer.email === email);
   if (matchEmail) {
     alert("Email já cadastrado, tente novamente!");
     return;
   }
 
-  const matchRg = customers.find((customer) => customer.rg === rg);
+  const matchRg = costummers.find((customer) => customer.rg === rg);
   if (matchRg) {
     alert("RG já cadastrado, tente novamente!");
     return;
