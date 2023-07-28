@@ -30,6 +30,7 @@ class Cliente {
       currentId = 1;
     } else {
       currentId = parseInt(currentId) + 1;
+      /*  */
     }
     localStorage.setItem("lastClientId", currentId);
     return currentId;
@@ -136,6 +137,7 @@ form.addEventListener("submit", function (event) {
    { customer = new Cliente(name, email, password, rg, cep, city, estate, street, number, complement); }
      costummers.push(customer);
      localStorage.setItem("clientes", JSON.stringify(costummers));
-  alert("Cadastro realizado com sucesso!")
+  alert(`${name}, seu cadastro  foi realizado com sucesso!`)
   form.submit();
 });
+

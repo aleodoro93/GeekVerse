@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const costummers = getClientesFromLocalStorage();
     const unmatchedCustomer = costummers.find((customer) => customer.email === email && customer.password != password);
-    
     const matchedCustomer = costummers.find((customer) => customer.email === email && customer.password === password);
 
     if (matchedCustomer) {
-      alert("Login bem-sucedido!");
+      const clientName = matchedCustomer.name
+      alert(` Bem-vindo, ${clientName}!`);
       window.location.href = "../planos/planos.html"
       form.reset();
     } else if (unmatchedCustomer){
